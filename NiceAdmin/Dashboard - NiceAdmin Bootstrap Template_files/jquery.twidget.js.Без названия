@@ -369,16 +369,16 @@
             var yearFromNow = new Date(new Date().setFullYear(new Date().getFullYear() + 1));
             dateSelect.datepicker({
                 autoclose: true,
-                format: "mm-dd",
+                format: "yyyy-mm-dd",
                 maxViewMode: 0,
                 startDate: "now",
+                endDate: yearFromNow,
                 disableTouchKeyboard: true,
                 language: _this.settings.localization.datepicker_language
             }).on('change', function() {
                 if(dateDepart.val()){
                     var start = dateDepart.datepicker('getDate').getDate() + ' ' + _this.settings.localization.month_names[dateDepart.datepicker('getDate').getMonth()] + ', ' + _this.settings.localization.weekdays_short[dateDepart.datepicker('getDate').getDay()];
                     spanDepart.text(start.toLowerCase());
-                    dateDepart.css('font-size', '0');
                 }
                 if(dateReturn.val()){
                     var end = dateReturn.datepicker('getDate').getDate() + ' ' + _this.settings.localization.month_names[dateReturn.datepicker('getDate').getMonth()] + ', ' + _this.settings.localization.weekdays_short[dateReturn.datepicker('getDate').getDay()];
@@ -899,7 +899,7 @@
             '                            <div class="twidget-dep-date twidget-form-item">'+
             '                                <div class="twidget-input-box">'+
             '                                    <label for="twidget-origin">'+_this.settings.localization.avia_input_date_start+'</label>'+
-            '                                    <input type="text" name="depart_date" required value=" ">'+
+            '                                    <input type="text" name="depart_date" placeholder="'+_this.settings.localization.avia_input_date_start+'" required value="'+dateOneWeekLater.getFullYear()+'-'+(dateOneWeekLater.getMonth()+1)+'-'+dateOneWeekLater.getDate()+'">'+
             '                                    <div class="twidget-icon-cal"></div>'+
             '                                    <span class="twidget-date-text twidget-date-depart"></span>'+
             '                                </div>'+
@@ -907,7 +907,7 @@
             '                            <div class="twidget-return-date twidget-form-item">'+
             '                                <div class="twidget-input-box">'+
             '                                    <label for="twidget-origin">'+_this.settings.localization.avia_input_date_end+'</label>'+
-            '                                    <input type="text" name="return_date" value=" ">'+
+            '                                    <input type="text" name="return_date" placeholder="'+_this.settings.localization.avia_input_date_end+'" value="'+dateTwoWeekLater.getFullYear()+'-'+(dateTwoWeekLater.getMonth()+1)+'-'+dateTwoWeekLater.getDate()+'">'+
             '                                    <div class="twidget-icon-cal""></div>'+
             '                                    <div class="twidget-icon-delete" style="display: none;"></div>'+
             '                                    <span class="twidget-date-text twidget-date-return"></span>'+

@@ -60,7 +60,7 @@
           </defs>
         </svg>             
       </a>
-      <i class="bi bi-list toggle-sidebar-btn"></i>
+      <i class="bi bi-list toggle-sidebar-btn sdbr"></i>
     </div><!-- End Logo -->
 
     <div class="search-bar">
@@ -281,12 +281,8 @@
 
   </header><!-- End Header -->
 
-  <div class="card-body">
-    <div class="container-xxxl flex-grow-1 container-p-y">
-  <div class="col-lg-12 mb-4 order-0">
-    <div class="" style="background-color: #0C73FE">
-    <div class="">
-        <div class="twidget-container" id="twidget"></div>
+  <div class="container-fluid container-p-y flex-grow-1 poisk sticky-top">
+        <div class="twidget" id="twidget">
         <script>
             $('#twidget').twidget({
                 locale: 'ru',
@@ -294,16 +290,15 @@
                 type: 'avia'
             });
         </script>
-    </div>
-    </div>
-    </div>
+        </div>
     <br />
     <div style="display: none" id='loading'><img width="60" height="60" id='loadinggif' src="assets/img/loading.gif"/></div>
     <div id="recommendations">
 
     </div>
-  </div>
 </div>
+
+
 
   <!-- ======= Sidebar ======= -->
   <aside id="sidebar" class="sidebar">
@@ -564,8 +559,6 @@
           <div class="row">
 
             <!-- Sales Card -->
-            <div class="col">
-              <div class="card info-card sales-card">
                 <!--
                 <div class="filter">
                   <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
@@ -595,10 +588,7 @@
                     </div>
                   </div>
                   -->
-                </div>
-
-              </div>
-            </div><!-- End Sales Card -->
+<!-- End Sales Card -->
 
             <!-- Revenue Card -->
             <!--<div class="col-xxl-4 col-md-6">

@@ -24,7 +24,7 @@ div, span, p, ol, ul, li, table, tbody, tfoot, thead, tr, th, td{
 .twidget-tab-content button{font-family:'Open Sans', arial, sans-serif; font-weight:600; outline:none; cursor:pointer; font-size:18px; border:none; background:none; }
 /*tab links*/
 .twidget-tab-links{ position:relative; z-index:9;}
-.twidget-tab-links ul {height:51px;}
+.twidget-tab-links ul {height:51px; }
 .twidget-tab-links ul li{background-color:#017997; position:relative; display:inline-block; float:left; box-shadow: rgba(0, 0, 0, 0.1) 0 -3px 0 0 inset;}
 .twidget-tab-links ul li:first-child{box-shadow: inset -3px -3px 0 rgba(0,0,0,.1); border-top-left-radius: 3px;}
 .twidget-tab-links ul li:last-child{box-shadow: inset 3px -3px 0 rgba(0,0,0,.1); border-top-right-radius: 3px;}
@@ -35,7 +35,7 @@ div, span, p, ol, ul, li, table, tbody, tfoot, thead, tr, th, td{
 .twidget-tab-links a{color:#fff; font-size:16px; font-weight:600; display:block; text-transform:uppercase; padding:0 20px 0 50px; line-height:51px;}
 
 /*tab content*/
-.twidget-tab-content{padding:20px 15px 0; background-color:#00b1dd; border-radius:0 3px 3px 3px;}
+.twidget-tab-content{padding:20px 15px 0; background-color:#00b1dd; border-radius:0 3px 3px 3px; }
 .twidget-tab-content input[type="text"]{line-height:50px; height:50px; padding: 0 37px 0 12px; overflow: hidden; text-overflow: ellipsis;}
 .twidget-tab-content .twidget-tab{display:none;}
 .twidget-tab-content .twidget-tab.active{display:block;}
@@ -165,12 +165,12 @@ div, span, p, ol, ul, li, table, tbody, tfoot, thead, tr, th, td{
 .twidget-auto-fill-wrapper ul li:hover .twidget-city-name span {color:#fff !important;}
 @media (max-width: 1920px){
 .twidget-container{width:980px;}
-#twidget-tab1 .twidget-form-list li.twidget-origin, #twidget-tab1 .twidget-form-list li.twidget-destination{width:20%; margin-top: -20px;}
-#twidget-tab1 .twidget-form-list li.twidget-destination{width: 20%; margin-top: -20px}
-#twidget-tab1 .twidget-form-list li.twidget-flight-dates{width:20%; margin-top: -20px}
-#twidget-tab1 .twidget-form-list li.twidget-passengers{width:20%; margin-top: -20px}
-#twidget-tab1 .twidget-form-list li.twidget-submit-button{width:16%; margin-top: -20px}
-.twidget-tab-content .twidget-tab-bottom{height: 10px;}
+#twidget-tab1 .twidget-form-list li.twidget-origin, #twidget-tab1 .twidget-form-list li.twidget-destination{width:49.5%; margin-bottom:15px;}
+#twidget-tab1 .twidget-form-list li.twidget-destination{margin-right:0;}
+#twidget-tab1 .twidget-form-list li.twidget-flight-dates{width:43%;}
+#twidget-tab1 .twidget-form-list li.twidget-passengers{width:25%;}
+#twidget-tab1 .twidget-form-list li.twidget-submit-button{width:30%;}
+.twidget-tab-content .twidget-tab-bottom{height:20px;}
 
 }
 @media (max-width: 1920px){
