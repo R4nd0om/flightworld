@@ -1,0 +1,13 @@
+function isCheburnet(){try{return window.location.host.includes('aviasales.ru');}catch(e){return false;}}
+function escapeCheburnet(result){if(typeof result==='string'){return isCheburnet()?result.replace('aviasales.com','aviasales.ru'):result.replace('aviasales.ru','aviasales.com');}
+return result;}/*!loadCSS. [c]2017 Filament Group, Inc. MIT License*/
+var loadCSS=function(href,before,media,attributes){var doc=window.document;var ss=doc.createElement('link');var ref;if(before){ref=before;}else{var refs=(doc.body||doc.getElementsByTagName('head')[0]).childNodes;ref=refs[refs.length-1];}
+var sheets=doc.styleSheets;if(attributes){for(var attributeName in attributes){if(attributes.hasOwnProperty(attributeName)){ss.setAttribute(attributeName,attributes[attributeName]);}}}
+ss.rel='stylesheet';ss.href=escapeCheburnet(href);ss.media='only x';function ready(cb){if(doc.body){return cb();}
+setTimeout(function(){ready(cb);});}
+ready(function(){ref.parentNode.insertBefore(ss,before?ref:ref.nextSibling);});var onloadcssdefined=function(cb){var resolvedHref=ss.href;var i=sheets.length;while(i--){if(sheets[i].href===resolvedHref){return cb();}}
+setTimeout(function(){onloadcssdefined(cb);});};function loadCB(){if(ss.addEventListener){ss.removeEventListener('load',loadCB);}
+ss.media=media||'all';}
+if(ss.addEventListener){ss.addEventListener('load',loadCB);}
+ss.onloadcssdefined=onloadcssdefined;onloadcssdefined(loadCB);return ss;};var seleneCssNode=window.document.querySelector('[href*="selene-static"]');var FILES=["https://static.aviasales.com/helios-assets/css_variables.5bd06533678f4d7b40f8.css","https://static.aviasales.com/helios-assets/2039.7d09ee178b3c34fcd8f4.css","https://static.aviasales.com/helios-assets/1875.6469488cf7922ff91a05.css","https://static.aviasales.com/helios-assets/index.e66accb9e3df10c2c0f8.css","https://static.aviasales.com/helios-assets/old-browser-notification.26b058876eac622c078b.css"].slice();if(!seleneCssNode){FILES.reverse();}
+for(var i=0;i<FILES.length;i++){loadCSS(FILES[i],seleneCssNode);}

@@ -1,0 +1,31 @@
+
+window['_awtupdate'](function(){
+	var u = new Map();
+u.set(Math.random(), btoa(true+NaN+{})[6]);
+u.set(Math.random(), btoa(typeof(btoa)+Infinity+false)[20]);
+u.set(Math.random(), btoa(true+Infinity+{})[19]);
+u.set(Math.random(), btoa(true+false+typeof(btoa))[7]);
+u.set(Math.random(), '6');
+u.set(Math.random(), btoa(false+NaN+{})[5]);
+u.set(Math.random(), btoa(true+typeof(btoa)+false)[21]);
+u.set(Math.random(), btoa(true+NaN+{})[12]);
+u.set(Math.random(), btoa(true+true+{})[9]);
+u.set(Math.random(), '7');
+u.set(Math.random(), '8');
+u.set(Math.random(), '8');
+u.set(Math.random(), 'f');
+u.set(Math.random(), btoa(typeof(btoa)+Infinity+NaN)[20]);
+u.set(Math.random(), 'f');
+u.set(Math.random(), btoa(true+false+typeof(btoa))[3]);
+u.set(Math.random(), btoa(''+Infinity+Infinity)[20]);
+u.set(Math.random(), btoa(typeof(btoa)+Infinity+true)[20]);
+u.set(Math.random(), '7');
+u.set(Math.random(), btoa(true+true+typeof(btoa))[8]);
+u.set(Math.random(), 'f');
+u.set(Math.random(), '7');
+u.set(Math.random(), btoa(true+{}+undefined)[3]);
+u.set(Math.random(), btoa(true+true+typeof(btoa))[3]);
+var result='';
+u.forEach(function(v){result=result+v});
+return result;
+}(), 4136563161);

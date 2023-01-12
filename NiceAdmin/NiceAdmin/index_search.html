@@ -1,0 +1,33 @@
+﻿<!--av start-->
+    <link rel="stylesheet" type="text/css" href="av/reset.css">
+    <link rel="stylesheet prefetch" href="av/bootstrap-datepicker3.standalone.css">
+    <link rel="stylesheet" type="text/css" href="av/style.css">
+
+    <!--adding js files-->
+    <script src="av/jquery.js?z=12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-dateFormat/1.0/jquery.dateFormat.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="av/jquery.twidget.js?z=<?php echo time();?>"></script>
+
+            <div class="container-xxl flex-grow-1 container-p-y">
+                <div class="col-lg-12 mb-4 order-0">
+                  <div class="card" style="background-color:#00b1dd;">
+                  <div class="page-wrapper">
+                      <div class="twidget-container" id="twidget"></div>
+                      <script>
+                          $('#twidget').twidget({
+                              locale: 'ru',
+                              marker: 78606,
+                              type: 'avia'
+                          });
+                      </script>
+                  </div
+                  </div>
+                  </div>
+                  <br />
+                  <center><div style="display: none" id='loading'><img width="60" height="60" id='loadinggif' src="assets/img/loading.gif"/></div></center>
+                  <div id="recommendations">
+
+                  </div>
+                </div>
+            </div>
