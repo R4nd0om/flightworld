@@ -34,9 +34,7 @@ h6 {
 # Main
 --------------------------------------------------------------*/
 #main {
-  margin-top: 60px;
   padding: 20px 30px;
-  transition: all 0.3s;
 }
 
 @media (max-width: 1199px) {
@@ -616,8 +614,8 @@ h6 {
 # Sidebar
 --------------------------------------------------------------*/
 .sidebar {
-  position: absolute;
-  top: 250px;
+  position: fixed;
+  top: 140px;
   left: 0;
   bottom: 0;
   width: 300px;
@@ -651,7 +649,7 @@ h6 {
 
   #main,
   #footer {
-    margin-left: 300px;
+    margin-left: 0px;
   }
 }
 

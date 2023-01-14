@@ -29,8 +29,8 @@
             type: 'avia_hotel',
             hide_logos: false,
             open_in_new_tab: false,
-            default_origin: 'москва',
-            default_destination: 'санкт-пет',
+            default_origin: '',
+            default_destination: '',
 			lock_destination: false,
             default_hotel_location: '',
             localization: {
@@ -450,7 +450,7 @@
                 autoclose: true,
                 format: "yyyy-mm-dd",
                 maxViewMode: 0,
-                startDate: "now",
+                startDate: "",
                 disableTouchKeyboard: true,
                 language: _this.settings.localization.datepicker_language
             }).on('change', function() {
@@ -899,7 +899,7 @@
             '                            <div class="twidget-dep-date twidget-form-item">'+
             '                                <div class="twidget-input-box">'+
             '                                    <label for="twidget-origin">'+_this.settings.localization.avia_input_date_start+'</label>'+
-            '                                    <input type="text" name="depart_date" required value=" ">'+
+            '                                    <input type="text" name="depart_date" value=" ">'+
             '                                    <div class="twidget-icon-cal"></div>'+
             '                                    <span class="twidget-date-text twidget-date-depart"></span>'+
             '                                </div>'+
@@ -920,8 +920,8 @@
             '                        <li class="twidget-passengers">'+
             '                            <label for="twidget-passengers-detail">'+_this.settings.localization.avia_passengers_select_caption+'</label>'+
             '                            <div class="twidget-passengers-detail">'+
-            '                                <div class="twidget-pas-no"><span id="twidget-pas">1</span> <span class="twidget-pas-caption">'+_this.settings.localization.avia_passengers_caption_1+'</span></div>'+
-            '                                <div class="twidget-class">'+_this.settings.localization.avia_passengers_economy_class+'</div>'+
+            '                                <div class="twidget-pas-no"><span id="twidget-pas"></span> <span class="twidget-pas-caption"></span></div>'+
+            '                                <div class="twidget-class"></div>'+
             '                            </div>'+
             '                            <!--start passenger selection-->'+
             '                            <div id="twidget-passenger-form" style="display: none;">'+

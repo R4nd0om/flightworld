@@ -8,6 +8,10 @@ div, span, p, ol, ul, li, table, tbody, tfoot, thead, tr, th, td{
     font: inherit;
     vertical-align: baseline;
 }
+
+li {
+    margin-left: 15px;
+}
 /* HTML5 display-role reset for older browsers */
 .twidget-container { line-height: 1;}
 .twidget-container ol, .twidget-container ul { list-style: none;}
@@ -35,7 +39,7 @@ div, span, p, ol, ul, li, table, tbody, tfoot, thead, tr, th, td{
 .twidget-tab-links a{color:#fff; font-size:16px; font-weight:600; display:block; text-transform:uppercase; padding:0 20px 0 50px; line-height:51px;}
 
 /*tab content*/
-.twidget-tab-content{padding:20px 15px 0; background-color:#00b1dd; border-radius:0 3px 3px 3px;}
+.twidget-tab-content{padding:20px 15px 0; width: 100%; background-color:#00b1dd;}
 .twidget-tab-content input[type="text"]{line-height:50px; height:50px; padding: 0 37px 0 12px; overflow: hidden; text-overflow: ellipsis;}
 .twidget-tab-content .twidget-tab{display:none;}
 .twidget-tab-content .twidget-tab.active{display:block;}
@@ -53,19 +57,21 @@ div, span, p, ol, ul, li, table, tbody, tfoot, thead, tr, th, td{
 .twidget-tab form {margin-top: 10px;}
 .twidget-tab-content .twidget-form-list > li{float:left; margin-right:1%; position:relative;}
 .twidget-tab-content .twidget-form-list > li:last-child{margin-right:0;}
-#twidget-tab1 .twidget-form-list li.twidget-origin,
+#twidget-tab1 .twidget-form-list li.twidget-origin{width:19%; margin-right: -12px;}
+#twidget-tab1 .twidget-form-list li.twidget-origin input{border-radius: 10px 0 0 10px;}
 #twidget-tab1 .twidget-form-list li.twidget-destination{width:19%;}
 .twidget-pseudo-input { position: absolute; top: 30px; left: 13px; font-family:'Open Sans', arial, sans-serif; width: 77%; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; min-height: 16px;}
 .twidget-pseudo-input .twidget-pseudo-name {color: transparent; white-space: nowrap;}
 #twidget-tab1 .twidget-form-list .twidget-origin-iata,
 #twidget-tab1 .twidget-form-list .twidget-destination-iata {position: absolute; right: 10px; line-height: 50px; margin-top: -48px; font-size: 12px; color: #999;}
-#twidget-tab1 .twidget-form-list li.twidget-flight-dates{width:27%;}
-#twidget-tab1 .twidget-form-list li.twidget-passengers{width:13%;}
+#twidget-tab1 .twidget-form-list li.twidget-flight-dates{width:27%; margin-left: -15px;}
+#twidget-tab1 .twidget-form-list li.twidget-passengers{width:13%; margin-left: -16px;}
+#twidget-tab1 .twidget-form-list li.twidget-passengers div{border-radius: 0 10px 10px 0;}
 #twidget-tab1 .twidget-form-list li.twidget-submit-button{width:18%;}
 .twidget-form-list li .twidget-input-box input{width:100%; border:1px solid #fff;}
 .twidget-form-list li .twidget-input-box input:focus{border-color:#fdd835;}
 .twidget-form-list li .twidget-input-box label, .twidget-passengers label, .twidget-hotel-guest label {color: white; position: relative; top: -4px; font-size: 12px; display: block;}
-.twidget-form-list li button{ height: 50px; margin-top: 12px; line-height:50px; text-align:center; width:100%; text-transform:uppercase; background-color:#ffa600; color:#fff; }
+.twidget-form-list li button{ height: 50px; margin-top: 12px; line-height:50px; border-radius: 15px; text-align:center; width:100%; text-transform:uppercase; background-color:#ffa600; color:#fff; }
 .twidget-form-list li.input-daterange > div{float:left; width:50%; }
 .twidget-form-list li.twidget-flight-dates .twidget-dep-date .twidget-input-box input,
 .twidget-form-list li.twidget-hotel-dates .twidget-start-date .twidget-input-box input{border-right:1px solid #cfd8dc;}
@@ -166,7 +172,7 @@ div, span, p, ol, ul, li, table, tbody, tfoot, thead, tr, th, td{
 @media (max-width: 1920px){
 .twidget-container{width:980px;}
 #twidget-tab1 .twidget-form-list li.twidget-origin, #twidget-tab1 .twidget-form-list li.twidget-destination{width:20%; margin-top: -20px;}
-#twidget-tab1 .twidget-form-list li.twidget-destination{width: 20%; margin-top: -20px}
+#twidget-tab1 .twidget-form-list li.twidget-destination{width: 20%; margin-top: -20px;}
 #twidget-tab1 .twidget-form-list li.twidget-flight-dates{width:20%; margin-top: -20px}
 #twidget-tab1 .twidget-form-list li.twidget-passengers{width:20%; margin-top: -20px}
 #twidget-tab1 .twidget-form-list li.twidget-submit-button{width:16%; margin-top: -20px}
