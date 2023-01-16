@@ -1,3 +1,8 @@
+@import 'https://static.aviasales.com/helios-assets/css_variables.5bd06533678f4d7b40f8.css';
+@import 'https://static.aviasales.com/helios-assets/2039.3283f6ee6aabc3fd4c29.css';
+@import 'https://static.aviasales.com/helios-assets/1875.6469488cf7922ff91a05.css';
+@import 'https://static.aviasales.com/helios-assets/old-browser-notification.26b058876eac622c078b.css';
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -6,7 +11,7 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Sofia Sans', sans-serif;
   background: #f6f9ff;
   color: #444444;
 }
@@ -43,6 +48,86 @@ h6 {
   }
 }
 
+.mainside {
+  margin-left: 25vw;
+} 
+
+@media (max-width: 550px) {
+  .mainside {
+    margin-left: 0;
+  }
+}
+
+.app__sidebar {
+  margin-left: 3.75%;
+  position: absolute;
+}
+
+@media (max-width: 1920px) {
+  .app__sidebar {
+    margin-left: 3.75%;
+  }
+}
+
+@media (max-width: 550px) {
+  .app__sidebar {
+    margin-left: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 101;
+  }
+  .direction-subscriptions {
+    margin-bottom: 0;
+    position: absolute;
+    bottom: -5.5%;
+    z-index: 1004;
+  }
+  ._7WYvzTyCL7jt4Pm1a8Jv, ._7WYvzTyCL7jt4Pm1a8Jv:before {
+    border-radius: 0;
+  }
+}
+
+.toggle-app-side {
+  display: none;
+}
+
+@media (max-width: 550px) {
+  .toggle-app-side {
+    display: block;
+    position: absolute;
+    position: fixed;
+    z-index: 1000;
+    margin-left: 35%;
+    width: 30%;
+    bottom: 10px;
+    background-color: #0C73FE;
+  }
+}
+
+.btn:first-child:checked {
+  background-color: #0C73FE;
+}
+
+.checkbox_68f2613 {
+  background-color: transparent;
+  transition-property: background-color;
+}
+
+.container_68f2613 input:checked~.checkbox_68f2613 {
+  background-color: #0C73FE;
+  border-color: #0C73FE;
+}
+
+.button_278c41a {
+  color: #0C73FE;
+}
+
+.button_278c41a:hover {
+  background-color: #0C73FE;
+}
+
 /*--------------------------------------------------------------
 # Page Title
 --------------------------------------------------------------*/
@@ -67,7 +152,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: #4154f1;
+  background: #0C73FE;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -138,6 +223,15 @@ h6 {
   margin-right: 10px;
   font-size: 18px;
   line-height: 0;
+}
+
+.filter-header.--with-divider:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+  right: 16px;
+  border-bottom: 1px solid var(--filter-divider-color);
 }
 
 .dropdown-menu .dropdown-item:hover {
@@ -363,13 +457,6 @@ h6 {
 --------------------------------------------------------------*/
 .logo {
   line-height: 1;
-  margin-left: -5px;
-}
-
-@media (min-width: 1200px) {
-  .logo {
-    width: 280px;
-  }
 }
 
 .logo img {
@@ -380,7 +467,7 @@ h6 {
 .logo svg {
   font-size: 26px;
   font-weight: 700;
-  color: #012970;
+  color: #fff;
   font-family: "Nunito", sans-serif;
 }
 
@@ -389,81 +476,48 @@ h6 {
 }
 
 .header {
+  margin: 0 auto;
+  background-size: cover;
+  max-width: 1550px;
+  flex-direction: row;
+  align-items: center;
+  display: flex;
   transition: all 0.5s;
   z-index: 997;
   height: 60px;
-  box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
-  background-color: #fff;
-  padding-left: 20px;
+  background-color: #0C73FE;
   /* Toggle Sidebar Button */
   /* Search Bar */
 }
 
+@media(max-width:550px) {
+  .header {
+    width: 100vw;
+  }
+}
+
+.bgrnd {
+  margin: 0;
+  padding: 0;
+  z-index: -50;
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  background-color: #0C73FE;
+}
+
 .header .toggle-sidebar-btn {
   font-size: 32px;
-  padding-left: 10px;
+  padding-left: 30px;
   cursor: pointer;
-  color: #012970;
+  color: #fff;
 }
 
-.header .search-bar {
-  min-width: 360px;
-  padding: 0 20px;
-}
 
-@media (max-width: 1199px) {
-  .header .search-bar {
-    position: fixed;
-    top: 50px;
-    left: 0;
-    right: 0;
-    padding: 20px;
-    box-shadow: 0px 0px 15px 0px rgba(1, 41, 112, 0.1);
-    background: white;
-    z-index: 9999;
-    transition: 0.3s;
-    visibility: hidden;
-    opacity: 0;
+@media(max-width: 550px) {
+  .poisk {
+    position: static;
   }
-
-  .header .search-bar-show {
-    top: 60px;
-    visibility: visible;
-    opacity: 1;
-  }
-}
-
-.header .search-form {
-  width: 100%;
-}
-
-.header .search-form input {
-  border: 0;
-  font-size: 14px;
-  color: #012970;
-  border: 1px solid rgba(1, 41, 112, 0.2);
-  padding: 7px 38px 7px 8px;
-  border-radius: 3px;
-  transition: 0.3s;
-  width: 100%;
-}
-
-.header .search-form input:focus,
-.header .search-form input:hover {
-  outline: none;
-  box-shadow: 0 0 10px 0 rgba(1, 41, 112, 0.15);
-  border: 1px solid rgba(1, 41, 112, 0.3);
-}
-
-.header .search-form button {
-  border: 0;
-  padding: 0;
-  margin-left: -30px;
-  background: none;
-}
-
-.header .search-form button i {
-  color: #012970;
 }
 
 /*--------------------------------------------------------------
@@ -480,13 +534,13 @@ h6 {
 
 .header-nav .nav-icon {
   font-size: 22px;
-  color: #012970;
+  color: #fff;
   margin-right: 25px;
   position: relative;
 }
 
 .header-nav .nav-profile {
-  color: #012970;
+  color: #fff;
 }
 
 .header-nav .nav-profile img {
@@ -597,7 +651,6 @@ h6 {
 }
 
 .header-nav .profile .dropdown-item i {
-  margin-right: 10px;
   font-size: 18px;
   line-height: 0;
 }
@@ -615,7 +668,7 @@ h6 {
 --------------------------------------------------------------*/
 .sidebar {
   position: fixed;
-  top: 140px;
+  top: 147px;
   left: 0;
   bottom: 0;
   width: 300px;
@@ -635,6 +688,14 @@ h6 {
   }
 }
 
+@media (max-width: 550px) {
+  .sidebar {
+    left: 0px;
+    width: 100vw;
+    margin-top: -90px;
+  }
+}
+
 .sidebar::-webkit-scrollbar {
   width: 5px;
   height: 8px;
@@ -643,32 +704,6 @@ h6 {
 
 .sidebar::-webkit-scrollbar-thumb {
   background-color: #aab7cf;
-}
-
-@media (min-width: 1200px) {
-
-  #main,
-  #footer {
-    margin-left: 0px;
-  }
-}
-
-@media (max-width: 1199px) {
-  .toggle-sidebar .sidebar {
-    left: 0;
-  }
-}
-
-@media (min-width: 1200px) {
-
-  .toggle-sidebar #main,
-  .toggle-sidebar #footer {
-    margin-left: 0;
-  }
-
-  .toggle-sidebar .sidebar {
-    left: -300px;
-  }
 }
 
 .sidebar-nav {
@@ -733,7 +768,7 @@ h6 {
 
 .sidebar-nav .nav-link .bi-chevron-down {
   margin-right: 0;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease;
 }
 
 .sidebar-nav .nav-link:not(.collapsed) .bi-chevron-down {

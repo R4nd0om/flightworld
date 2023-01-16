@@ -40,20 +40,79 @@
   /**
    * Sidebar toggle
    */
-   if (select('.toggle-sidebar-btn')) {
-    on('click', '.toggle-sidebar-btn', function(e) {
-      select('body').classList.toggle('toggle-sidebar')
-    })
-  }
 
-  /**
-   * Search bar toggle
-   */
-  if (select('.search-bar-toggle')) {
-    on('click', '.search-bar-toggle', function(e) {
-      select('.search-bar').classList.toggle('search-bar-show')
-    })
+  $(document).ready(function() {
+    $('#firstHeader').click(function() {
+        $('#firstGroup').toggleClass("--is-open");
+    });
+});
+$(document).ready(function() {
+  $('#secondHeader').click(function() {
+      $('#secondGroup').toggleClass("--is-open");
+  });
+});
+$(document).ready(function() {
+  $('#thirdHeader').click(function() {
+      $('#thirdGroup').toggleClass("--is-open");
+  });
+});
+$(document).ready(function() {
+  $('#fourthHeader').click(function() {
+      $('#fourthGroup').toggleClass("--is-open");
+  });
+});
+$(document).ready(function() {
+  $('#fifthHeader').click(function() {
+      $('#fifthGroup').toggleClass("--is-open");
+  });
+});
+$(document).ready(function() {
+  $('#sixthHeader').click(function() {
+      $('#sixthGroup').toggleClass("--is-open");
+  });
+});
+$(document).ready(function() {
+  $('#seventhHeader').click(function() {
+      $('#seventhGroup').toggleClass("--is-open");
+  });
+});
+$(document).ready(function() {
+  $('#eighthHeader').click(function() {
+      $('#eighthGroup').toggleClass("--is-open");
+  });
+});
+$(document).ready(function() {
+  $('#ninthHeader').click(function() {
+      $('#ninthGroup').toggleClass("--is-open");
+  });
+});
+$(document).ready(function() {
+  $('#tenthHeader').click(function() {
+      $('#tenthGroup').toggleClass("--is-open");
+  });
+});
+$(document).ready(function() {
+  $('#eleventhHeader').click(function() {
+      $('#eleventhGroup').toggleClass("--is-open");
+  });
+});
+$(document).ready(function() {
+  $('#twelfthHeader').click(function() {
+      $('#twelfthGroup').toggleClass("--is-open");
+  });
+});
+$(document).ready(function() {
+  $('#thirteenthHeader').click(function() {
+      $('#thirteenthGroup').toggleClass("--is-open");
+  });
+});
+
+$(document).mouseup(function (e) {
+  var container = $("#twidget-passenger-form");
+  if (container.has(e.target).length === 0){
+      container.hide();
   }
+});
 
   /**
    * Navbar links active state on scroll

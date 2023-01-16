@@ -29,8 +29,8 @@
             type: 'avia_hotel',
             hide_logos: false,
             open_in_new_tab: false,
-            default_origin: '',
-            default_destination: '',
+            default_origin: 'Худжанд',
+            default_destination: 'Москва',
 			lock_destination: false,
             default_hotel_location: '',
             localization: {
@@ -102,17 +102,17 @@
                 hotel_tab_caption: 'Отели',
                 avia_logo_caption: 'Поиск дешёвых авиабилетов',
                 hotel_logo_caption: 'Поиск дешёвых отелей',
-                avia_input_origin_label: 'Город вылета',
-                avia_input_destination_label: 'Город прибытия',
-                hotel_input_destination_label: 'Город или отель',
+                avia_input_origin_label: '.',
+                avia_input_destination_label: '.',
+                hotel_input_destination_label: '.',
                 hotels_count_caption_1: 'отель',
                 hotels_count_caption_2: 'отеля',
                 hotels_count_caption_5: 'отелей',
-                avia_input_date_start: 'Туда',
-                avia_input_date_end: 'Обратно',
+                avia_input_date_start: '.',
+                avia_input_date_end: '.',
                 hotel_input_date_start: 'Прибытие',
                 hotel_input_date_end: 'Выезд',
-                avia_passengers_select_caption: 'Пассажиры/Класс',
+                avia_passengers_select_caption: '.',
                 hotel_guests_select_caption: 'Гости',
                 avia_passengers_caption_1: 'пассажир',
                 avia_passengers_caption_2: 'пассажира',
@@ -350,7 +350,7 @@
                 iconReturnDel  = container.find('.twidget-return-date .twidget-icon-delete'),
                 spanDepart     = container.find('.twidget-date-depart'),
                 spanReturn     = container.find('.twidget-date-return'),
-                spanDateFormat = 'MMMM D';
+                spanDateFormat = '';
 
             $.fn.datepicker.dates['en'].daysMin = ["<span style='color: red;'>Su</span>","Mo","Tu","We","Th","Fr","<span style='color: red;'>Sa</span>"];
 
@@ -362,23 +362,21 @@
                 monthsShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
                 today: "Today",
                 clear: "Clear",
-                format: "mm/dd/yyyy",
-                titleFormat: "MM yyyy", /* Leverages same syntax as 'format' */
                 weekStart: 1
             };
             var yearFromNow = new Date(new Date().setFullYear(new Date().getFullYear() + 1));
             dateSelect.datepicker({
                 autoclose: true,
-                format: "mm-dd",
+                format: "m",
                 maxViewMode: 0,
                 startDate: "now",
+                endDate: "",
                 disableTouchKeyboard: true,
                 language: _this.settings.localization.datepicker_language
             }).on('change', function() {
                 if(dateDepart.val()){
                     var start = dateDepart.datepicker('getDate').getDate() + ' ' + _this.settings.localization.month_names[dateDepart.datepicker('getDate').getMonth()] + ', ' + _this.settings.localization.weekdays_short[dateDepart.datepicker('getDate').getDay()];
                     spanDepart.text(start.toLowerCase());
-                    dateDepart.css('font-size', '0');
                 }
                 if(dateReturn.val()){
                     var end = dateReturn.datepicker('getDate').getDate() + ' ' + _this.settings.localization.month_names[dateReturn.datepicker('getDate').getMonth()] + ', ' + _this.settings.localization.weekdays_short[dateReturn.datepicker('getDate').getDay()];
@@ -450,7 +448,7 @@
                 autoclose: true,
                 format: "yyyy-mm-dd",
                 maxViewMode: 0,
-                startDate: "",
+                startDate: "now",
                 disableTouchKeyboard: true,
                 language: _this.settings.localization.datepicker_language
             }).on('change', function() {
@@ -899,7 +897,7 @@
             '                            <div class="twidget-dep-date twidget-form-item">'+
             '                                <div class="twidget-input-box">'+
             '                                    <label for="twidget-origin">'+_this.settings.localization.avia_input_date_start+'</label>'+
-            '                                    <input type="text" name="depart_date" value=" ">'+
+            '                                    <input type="text" id="inp" name="depart_date" required value=" ">'+
             '                                    <div class="twidget-icon-cal"></div>'+
             '                                    <span class="twidget-date-text twidget-date-depart"></span>'+
             '                                </div>'+
@@ -907,7 +905,7 @@
             '                            <div class="twidget-return-date twidget-form-item">'+
             '                                <div class="twidget-input-box">'+
             '                                    <label for="twidget-origin">'+_this.settings.localization.avia_input_date_end+'</label>'+
-            '                                    <input type="text" name="return_date" value=" ">'+
+            '                                    <input type="text" name="return_date">'+
             '                                    <div class="twidget-icon-cal""></div>'+
             '                                    <div class="twidget-icon-delete" style="display: none;"></div>'+
             '                                    <span class="twidget-date-text twidget-date-return"></span>'+
@@ -920,8 +918,8 @@
             '                        <li class="twidget-passengers">'+
             '                            <label for="twidget-passengers-detail">'+_this.settings.localization.avia_passengers_select_caption+'</label>'+
             '                            <div class="twidget-passengers-detail">'+
-            '                                <div class="twidget-pas-no"><span id="twidget-pas"></span> <span class="twidget-pas-caption"></span></div>'+
-            '                                <div class="twidget-class"></div>'+
+            '                                <div class="twidget-pas-no"><span id="twidget-pas">1</span> <span class="twidget-pas-caption">'+_this.settings.localization.avia_passengers_caption_1+'</span></div>'+
+            '                                <div class="twidget-class">'+_this.settings.localization.avia_passengers_economy_class+'</div>'+
             '                            </div>'+
             '                            <!--start passenger selection-->'+
             '                            <div id="twidget-passenger-form" style="display: none;">'+
