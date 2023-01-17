@@ -19,14 +19,14 @@ div, span, p, ol, ul, li, table, tbody, tfoot, thead, tr, th, td{
 .clearfix:after, .clearfix:before {content:""; display:table;}
 .clearfix:after{clear:both;}
 .twidget-container {font-family: 'Roboto', sans-serif; font-size:14px; line-height:1; color:#424242;}
-.twidget-container{padding-top:0; width:1170px; margin-left:auto; margin-right:auto;}
+.twidget-container{padding-top:0; width:1170px; margin:0 auto;}
 .twidget-container input[type="text"], .twidget-container input[type="email"],  .twidget-container input[type="date"]{border:none; outline:none; background-color:#fff; color:#424242; font-family:'Open Sans', arial, sans-serif; font-size: 14px; }
 .twidget-container input::-ms-clear {display: none;}
 .twidget-tab-content button{font-family: 'Roboto', sans-serif; font-weight:600; outline:none; cursor:pointer; font-size:18px; border:none; background:none; }
 /*tab links*/
 .twidget-tab-links{ position:relative; z-index:9;}
 .twidget-tab-links ul {height:61px;}
-.twidget-tab-links ul li{background-color:#0C73FE; position:relative; display:inline-block; float:left; box-shadow: rgba(0, 0, 0, 0.1) 0 -3px 0 0 inset;}
+.twidget-tab-links ul li{background-color:#0C73FE; position:relative; display:inline-block; float: left; box-shadow: rgba(0, 0, 0, 0.1) 0 -3px 0 0 inset;}
 .twidget-tab-links ul li:first-child{box-shadow: inset -3px -3px 0 rgba(0,0,0,.1); border-top-left-radius: 3px;}
 .twidget-tab-links ul li:last-child{box-shadow: inset 3px -3px 0 rgba(0,0,0,.1); border-top-right-radius: 3px;}
 .twidget-tab-links ul li.active{background-color:#0C73FE; box-shadow:none; -webkit-box-shadow:none; -moz-box-shadow:none;}
@@ -36,7 +36,7 @@ div, span, p, ol, ul, li, table, tbody, tfoot, thead, tr, th, td{
 .twidget-tab-links a{color:#fff; font-size:16px; font-weight:600; display:block; text-transform:uppercase; padding:0 20px 0 60px; line-height:61px;}
 
 /*tab content*/
-.twidget-tab-content{padding: 20px 0px 0; display: flex; justify-content: center; background-color: #0C73FE; background-size: cover;}
+.twidget-tab-content{padding: 20px 0px 0; display: flex; justify-content: center; align-items: center; background-color: #0C73FE; background-size: cover;}
 .twidget-tab-content input[type="text"]{line-height:60px; height:60px; padding: 0 37px 0 12px; overflow: hidden; text-overflow: ellipsis;}
 .twidget-tab-content .twidget-tab{display:none;}
 .twidget-tab-content .twidget-tab.active{display:block;}
@@ -168,8 +168,7 @@ div, span, p, ol, ul, li, table, tbody, tfoot, thead, tr, th, td{
 .twidget-auto-fill-wrapper ul li:hover .twidget-city-airport-name,
 .twidget-auto-fill-wrapper ul li:hover .twidget-city-name span {color:#fff !important;}
 
-@media (max-width: 2560px){
-    .twidget-container{width:auto;}
+@media (max-width: 10000px){
     #twidget-tab1 .twidget-form-list li.twidget-origin input{border-radius: 10px 0 0 10px;}
     #twidget-tab1 .twidget-form-list li.twidget-origin{width:288px; margin-bottom:15px;}
     #twidget-tab1 .twidget-form-list li.twidget-destination{width:288px; margin-bottom:15px;}
@@ -177,24 +176,36 @@ div, span, p, ol, ul, li, table, tbody, tfoot, thead, tr, th, td{
     .twidget-dep-date {width: 288px;}
     #twidget-tab1 .twidget-form-list li.twidget-passengers{width:288px; margin-left: -1px;}
     #twidget-tab1 .twidget-form-list li.twidget-passengers div{border-radius: 0 10px 10px 0;}
-    #twidget-tab1 .twidget-form-list li.twidget-submit-button{width:230px; margin-left: 5px;}
+    #twidget-tab1 .twidget-form-list li.twidget-submit-button{width: 230px; margin-left: 5px;}
+    .twidget-tab-content .twidget-tab-bottom{height:0px;}
+    #twidget-tab1 {margin-left: 2.4%;}
+    }
+
+@media (max-width: 2560px){
+    #twidget-tab1 .twidget-form-list li.twidget-origin input{border-radius: 10px 0 0 10px;}
+    #twidget-tab1 .twidget-form-list li.twidget-origin{width:288px; margin-bottom:15px;}
+    #twidget-tab1 .twidget-form-list li.twidget-destination{width:288px; margin-bottom:15px;}
+    .twidget-return-date {width: 288px; padding-left: 3px;}
+    .twidget-dep-date {width: 288px;}
+    #twidget-tab1 .twidget-form-list li.twidget-passengers{width:288px; margin-left: -1px;}
+    #twidget-tab1 .twidget-form-list li.twidget-passengers div{border-radius: 0 10px 10px 0;}
+    #twidget-tab1 .twidget-form-list li.twidget-submit-button{width: 230px; margin-left: 5px;}
     .twidget-tab-content .twidget-tab-bottom{height:0px;}
     }
 
 @media (max-width: 1920px){
-.twidget-container{width:auto;}
-#twidget-tab1 .twidget-form-list li.twidget-origin input{border-radius: 10px 0 0 10px;}
-#twidget-tab1 .twidget-form-list li.twidget-origin{width:288px; margin-bottom:15px;}
-#twidget-tab1 .twidget-form-list li.twidget-destination{width:288px; margin-bottom:15px;}
-.twidget-return-date {width: 288px; padding-left: 3px;}
-.twidget-dep-date {width: 288px;}
-#twidget-tab1 .twidget-form-list li.twidget-passengers{width:288px; margin-left: -1px;}
-#twidget-tab1 .twidget-form-list li.twidget-passengers div{border-radius: 0 10px 10px 0;}
-#twidget-tab1 .twidget-form-list li.twidget-submit-button{width:230px; margin-left: 5px;}
-.twidget-tab-content .twidget-tab-bottom{height:0px;}
+    #twidget-tab1 .twidget-form-list li.twidget-origin input{border-radius: 10px 0 0 10px;}
+    #twidget-tab1 .twidget-form-list li.twidget-origin{width:288px; margin-bottom:15px;}
+    #twidget-tab1 .twidget-form-list li.twidget-destination{width:288px; margin-bottom:15px;}
+    .twidget-return-date {width: 288px; padding-left: 3px;}
+    .twidget-dep-date {width: 288px;}
+    #twidget-tab1 .twidget-form-list li.twidget-passengers{width:288px; margin-left: -1px;}
+    #twidget-tab1 .twidget-form-list li.twidget-passengers div{border-radius: 0 10px 10px 0;}
+    #twidget-tab1 .twidget-form-list li.twidget-submit-button{width: 230px; margin-left: 5px;}
+    .twidget-tab-content .twidget-tab-bottom{height:0px;}
 }
 
-@media (max-width: 1550px) {
+@media (max-width: 1650px) {
     .twidget-container{width:auto;}
 #twidget-tab1 .twidget-form-list li.twidget-origin input{border-radius: 10px 0 0 10px;}
 #twidget-tab1 .twidget-form-list li.twidget-origin{width:20%; margin-bottom:15px;}
@@ -205,6 +216,7 @@ div, span, p, ol, ul, li, table, tbody, tfoot, thead, tr, th, td{
 #twidget-tab1 .twidget-form-list li.twidget-passengers div{border-radius: 0 10px 10px 0;}
 #twidget-tab1 .twidget-form-list li.twidget-submit-button{width: 12%; margin-left: 5px;}
 .twidget-tab-content .twidget-tab-bottom{height:0px;}
+#twidget-tab1 {margin-left: 0%;}
 }
 
 
@@ -218,6 +230,10 @@ div, span, p, ol, ul, li, table, tbody, tfoot, thead, tr, th, td{
 #twidget-tab1 .twidget-form-list li.twidget-passengers div{border-radius: 0 10px 10px 0;}
 #twidget-tab1 .twidget-form-list li.twidget-submit-button{width:11%; margin-left: 5px;}
 .twidget-tab-content .twidget-tab-bottom{height:0px;}
+}
+
+@media(max-width:1250px) {
+    #twidget-tab1 {margin-left: 20px;}
 }
 
 @media (max-width: 1100px){
