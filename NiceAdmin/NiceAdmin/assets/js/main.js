@@ -107,12 +107,6 @@ $(document).ready(function() {
   });
 });
 
-$(document).mouseup(function (e) {
-  var container = $("#twidget-passenger-form");
-  if (container.has(e.target).length === 0){
-      container.hide();
-  }
-});
 
   /**
    * Navbar links active state on scroll
@@ -164,6 +158,14 @@ $(document).mouseup(function (e) {
     }
     window.addEventListener('load', toggleBacktotop)
     onscroll(document, toggleBacktotop)
+  }
+
+  if(window.matchMedia('(max-width: 1920px)').matches) {
+    $('.app__sidebar').addClass('show')
+  }
+
+  if(window.matchMedia('(max-width: 550px)').matches) {
+    $('.app__sidebar').removeClass('show')
   }
 
   /**

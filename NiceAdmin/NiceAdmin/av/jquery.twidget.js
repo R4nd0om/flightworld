@@ -45,7 +45,7 @@
                 hotels_count_caption_2: 'hotels',
                 hotels_count_caption_5: 'hotels',
                 avia_input_date_start: 'Depart date',
-                avia_input_date_end: 'Return date',
+                avia_input_date_end: '',
                 hotel_input_date_start: 'Check In',
                 hotel_input_date_end: 'Check Out',
                 avia_passengers_select_caption: 'Passengers/Class',
@@ -120,11 +120,11 @@
                 hotel_guests_caption_1: 'гость',
                 hotel_guests_caption_2: 'гостя',
                 hotel_guests_caption_5: 'гостей',
-                avia_passengers_select_adults: 'Взрослые',
-                avia_passengers_select_children: 'Дети до 12 лет',
+                avia_passengers_select_adults: 'Старше 12 лет',
+                avia_passengers_select_children: 'От 2 до 12 лет',
                 hotel_guests_select_children: 'Дети до 17 лет',
                 hotel_guests_select_children_age: 'Возраст',
-                avia_passengers_select_infants: 'Дети до 2 лет',
+                avia_passengers_select_infants: 'До 2 лет, без места',
                 avia_passengers_economy_class: 'эконом',
                 avia_passengers_business_class: 'бизнес-класс',
                 avia_passengers_business_class_checkbox: 'Перелет бизнес-классом',
@@ -377,7 +377,11 @@
                 if(dateDepart.val()){
                     var start = dateDepart.datepicker('getDate').getDate() + ' ' + _this.settings.localization.month_names[dateDepart.datepicker('getDate').getMonth()] + ', ' + _this.settings.localization.weekdays_short[dateDepart.datepicker('getDate').getDay()];
                     spanDepart.text(start.toLowerCase());
+                    
                 }
+
+                $(document).find('.datepicker tbody').removeClass('with-return-button');
+            }).on('change', function() {
                 if(dateReturn.val()){
                     var end = dateReturn.datepicker('getDate').getDate() + ' ' + _this.settings.localization.month_names[dateReturn.datepicker('getDate').getMonth()] + ', ' + _this.settings.localization.weekdays_short[dateReturn.datepicker('getDate').getDay()];
                     spanReturn.text(end.toLowerCase());
@@ -388,10 +392,12 @@
                 }
                 $(document).find('.datepicker tbody').removeClass('with-return-button');
             }).on('click', function() {
+                
                 if(container.find('.twidget-passengers-detail').hasClass('active')){
                     container.find('.twidget-passengers-detail').trigger('click');
                 }
-            });
+            })
+
             dateSelect.trigger('change');
 
             dateDepart.change(function(){
@@ -905,7 +911,7 @@
             '                            <div class="twidget-return-date twidget-form-item">'+
             '                                <div class="twidget-input-box">'+
             '                                    <label for="twidget-origin">'+_this.settings.localization.avia_input_date_end+'</label>'+
-            '                                    <input type="text" name="return_date">'+
+            '                                    <input type="text" name="return_date" placeholder="Обратно">'+
             '                                    <div class="twidget-icon-cal""></div>'+
             '                                    <div class="twidget-icon-delete" style="display: none;"></div>'+
             '                                    <span class="twidget-date-text twidget-date-return"></span>'+
@@ -922,25 +928,25 @@
             '                                <div class="twidget-class">'+_this.settings.localization.avia_passengers_economy_class+'</div>'+
             '                            </div>'+
             '                            <!--start passenger selection-->'+
-            '                            <div id="twidget-passenger-form" style="display: none;">'+
+            '                            <div id="twidget-passenger-form" style="display: none">'+
             '                                <div class="twidget-passenger-form-wrapper">'+
             '                                    <ul class="twidget-age-group">'+
             '                                        <li>'+
-            '                                            <div class="twidget-cell twidget-age-name">' + _this.settings.localization.avia_passengers_select_adults + '</div>'+
+            '                                            <div class="twidget-cell twidget-age-name">'+ '<span class="ageGroup">Взрослые</span></br>' + _this.settings.localization.avia_passengers_select_adults + '</div>'+
             '                                            <div class="twidget-cell twidget-age-select">'+
-            '                                                <span class="twidget-dec twidget-q-btn" data-age="adults">-</span><span class="twidget-num"><input type="text" name="adults" value="1"></span><span class="twidget-inc twidget-q-btn" data-age="adults">+</span>'+
+            '                                                <span class="twidget-dec twidget-q-btn" data-age="adults">-</span><span class="twidget-num"><input type="text" name="adults" value="1" readonly></span><span class="twidget-inc twidget-q-btn" data-age="adults">+</span>'+
             '                                            </div>'+
             '                                        </li>'+
             '                                        <li>'+
-            '                                            <div class="twidget-cell twidget-age-name">' + _this.settings.localization.avia_passengers_select_children + '</div>'+
+            '                                            <div class="twidget-cell twidget-age-name">'+ '<span class="ageGroup">Дети</span></br>' + _this.settings.localization.avia_passengers_select_children + '</div>'+
             '                                            <div class="twidget-cell twidget-age-select">'+
-            '                                                <span class="twidget-dec twidget-q-btn" data-age="children">-</span><span class="twidget-num"><input type="text" name="children" value="0"></span><span class="twidget-inc twidget-q-btn" data-age="children">+</span>'+
+            '                                                <span class="twidget-dec twidget-q-btn" data-age="children">-</span><span class="twidget-num"><input type="text" name="children" value="0" readonly></span><span class="twidget-inc twidget-q-btn" data-age="children">+</span>'+
             '                                            </div>'+
             '                                        </li>'+
             '                                        <li>'+
-            '                                            <div class="twidget-cell twidget-age-name">' + _this.settings.localization.avia_passengers_select_infants + '</div>'+
+            '                                            <div class="twidget-cell twidget-age-name">'+ '<span class="ageGroup">Младенцы</span></br>' + _this.settings.localization.avia_passengers_select_infants + '</div>'+
             '                                            <div class="twidget-cell twidget-age-select">'+
-            '                                                <span class="twidget-dec twidget-q-btn" data-age="infants">-</span><span class="twidget-num"><input type="text" name="infants" value="0"></span><span class="twidget-inc twidget-q-btn" data-age="infants">+</span>'+
+            '                                                <span class="twidget-dec twidget-q-btn" data-age="infants">-</span><span class="twidget-num"><input type="text" name="infants" value="0" readonly></span><span class="twidget-inc twidget-q-btn" data-age="infants">+</span>'+
             '                                            </div>'+
             '                                        </li>'+
             '                                    </ul>'+
@@ -1005,7 +1011,6 @@
             }
           });
     });
-
 
 function your_function_name(sender){
 alert(1234);

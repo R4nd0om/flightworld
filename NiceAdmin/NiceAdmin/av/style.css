@@ -60,31 +60,31 @@ div, span, p, ol, ul, li, table, tbody, tfoot, thead, tr, th, td{
 .twidget-pseudo-input .twidget-pseudo-name {color: transparent; white-space: nowrap;}
 #twidget-tab1 .twidget-form-list .twidget-origin-iata,
 #twidget-tab1 .twidget-form-list .twidget-destination-iata {position: absolute; right: 10px; line-height: 40px; margin-top: -48px; font-size: 12px; color: #999;}
-#twidget-tab1 .twidget-form-list li.twidget-flight-dates{width:27%;}
+#twidget-tab1 .twidget-form-list li.twidget-flight-dates{width:410px;}
 #twidget-tab1 .twidget-form-list li.twidget-passengers{width:13%;}
 #inp {color: #fff;}
 #twidget-tab1 .twidget-form-list li.twidget-submit-button{width:18%;}
 .twidget-form-list li .twidget-input-box input{width:100%; border:1px solid #fff; appearance: none; outline: 0;}
-.twidget-form-list li .twidget-input-box input:focus{border: #fdd835 3px solid;}
+.twidget-form-list li .twidget-input-box input:focus{border: #FF6F32 3px solid;}
 .twidget-form-list li .twidget-input-box label, .twidget-passengers label, .twidget-hotel-guest label {color: #0C73FE; position: relative; top: -4px; font-size: 12px; display: block;}
 .twidget-form-list li button{ border-radius: 10px; height: 60px; margin-top: 12px; line-height:60px; text-align:center; font-family: 'Roboto', sans-serif; font-weight: 600; width:100%; background-color:#FF6F32; color:#fff; }
 .twidget-form-list li.input-daterange > div{float:left; width:50%; }
 .twidget-form-list li.twidget-flight-dates .twidget-dep-date .twidget-input-box input,
 .twidget-form-list li.twidget-hotel-dates .twidget-start-date .twidget-input-box input{border-right: 1px solid #fdd835;}
 .twidget-form-list li.twidget-flight-dates .twidget-dep-date .twidget-input-box input:focus,
-.twidget-form-list li.twidget-hotel-dates .twidget-start-date .twidget-input-box input:focus{border-right:#fdd835 3px solid;}
+.twidget-form-list li.twidget-hotel-dates .twidget-start-date .twidget-input-box input:focus{border-right:#FF6F32 3px solid;}
 .twidget-form-list li.input-daterange .twidget-input-box{position:relative;}
 .twidget-form-list li.input-daterange .twidget-input-box .twidget-icon-cal{background:url(./images/calendar.svg) no-repeat 50% 50%; position:absolute; right:0; top:14px; height:60px; width:40px; background-size:14px; cursor: pointer;}
 .twidget-form-list li.input-daterange .twidget-input-box .twidget-icon-delete{background:url(./images/icon-delete.svg) no-repeat 50% 50%; position:absolute; right:0; top:14px; height:60px; width:40px; background-size:13px; cursor:pointer;}
 .twidget-form-list li .twidget-passengers-detail,
 .twidget-form-list li .twidget-guest-detail{height:60px; padding:12px 14px; border:1px solid #fff; cursor:pointer; position:relative; background-color:#fff;}
 .twidget-form-list li .twidget-passengers-detail.active,
-.twidget-form-list li .twidget-guest-detail.active{border:#fdd835 3px solid;}
+.twidget-form-list li .twidget-guest-detail.active{border:#FF6F32 3px solid;}
 .twidget-form-list li .twidget-passengers-detail .twidget-pas-no{color:#424242; line-height:20px;}
 .twidget-form-list li .twidget-guest-detail .twidget-guest-no{line-height:36px;}
 .twidget-form-list li .twidget-passengers-detail .twidget-class{color:#999; font-size:13px; line-height:18px;}
 .twidget-form-list li .twidget-passengers-detail:after,
-.twidget-form-list li .twidget-guest-detail:after{background-image:url('./images/arrow-down.svg'); background-repeat:no-repeat; width:15px; height:8px; background-position:0 0; content:""; top:20px; right:7px; position:absolute; background-size:15px;}
+.twidget-form-list li .twidget-guest-detail:after{background-image:url('./images/arrow-down.svg'); background-repeat:no-repeat; width:15px; height:8px; background-position:0 0; content:""; top:25px; right:7px; position:absolute; background-size:15px;}
 .twidget-form-list li .twidget-passengers-detail.active:after,
 .twidget-form-list li .twidget-guest-detail.active:after{transform:rotate(180deg); -webkit-transform:rotate(180deg); -moz-transform:rotate(180deg);}
 .twidget-tab-content .twidget-tab-bottom{height:30px;}
@@ -94,9 +94,13 @@ div, span, p, ol, ul, li, table, tbody, tfoot, thead, tr, th, td{
 .twidget-form-list li.twidget-input-locked .twidget-pseudo-country-name,
 .twidget-form-list li.twidget-input-locked .twidget-destination-iata { color: white!important; font-weight: 600;}
 
+.input-daterange input {
+    text-align: start;
+}
+
 /*datepicker*/
 .datepicker {border-radius: 0!important;}
-.datepicker-dropdown { padding: 5px 10px 0 10px; height: 280px; }
+.datepicker-dropdown {width: 305px; padding: 5px 10px 0 10px; height: 280px; }
 .datepicker-days {font-family: 'Roboto', sans-serif;}
 .twidget-container .input-daterange input{text-align:left; font-size: 0; z-index:1;}
 .input-daterange input:first-child {border-radius: 0;}
@@ -118,7 +122,7 @@ div, span, p, ol, ul, li, table, tbody, tfoot, thead, tr, th, td{
 .datepicker table tr td.selected:hover, .datepicker table tr td.selected.highlighted:hover {background-color: #0C73FE;}
 .datepicker table tr td.range { background-color: #0C73FE;}
 .datepicker table tr td.active:active:hover, .datepicker table tr td.active.highlighted:active:hover, .datepicker table tr td.active.active:hover, .datepicker table tr td.active.highlighted.active:hover, .datepicker table tr td.active:active:focus, .datepicker table tr td.active.highlighted:active:focus, .datepicker table tr td.active.active:focus, .datepicker table tr td.active.highlighted.active:focus, .datepicker table tr td.active:active.focus, .datepicker table tr td.active.highlighted:active.focus, .datepicker table tr td.active.active.focus, .datepicker table tr td.active.highlighted.active.focus { background-color: #0C73FE;}
-.datepicker-cancel-return-date {color: #ffaf1a!important; position: absolute; display: block!important; margin-top: 0; left: 43px; width: 160px!important; line-height: 17px; border: 1px solid #ffa600!important; border-radius: 40px!important; text-align: center!important; font-size: 11px; cursor: pointer;}
+.datepicker-cancel-return-date {color: #FF6F32!important; position: absolute; display: block!important; margin-top: 0; left: 43px; width: 160px!important; line-height: 17px; border: 1px solid #ffa600!important; border-radius: 40px!important; text-align: center!important; font-size: 11px; cursor: pointer;}
 /*passenger slection*/
 #twidget-passenger-form, #twidget-guest-form{border-radius: 0; position:absolute; left:0; top:70px; width:100%; padding-top:7px; background:#fff; box-shadow:0 0 15px 0 rgba(0,0,0,0.3); z-index:999;}
 .twidget-age-group{display:table; width:100%;}
@@ -128,21 +132,21 @@ div, span, p, ol, ul, li, table, tbody, tfoot, thead, tr, th, td{
 .twidget-age-group li  .twidget-age-select{padding-right:10px; width:40%;}
 .twidget-age-select .twidget-dec{width:35px; height:35px; display:inline-block; text-indent:-9999px;cursor:pointer; border-radius:25px; line-height:35px; background:#fff 50% 50%/14px no-repeat; background-image:url('./images/minus.svg');}
 .twidget-age-select .twidget-dec:hover{background-color:#e0e0e0; }
-.twidget-age-select .twidget-num{width:30%; text-align:center; line-height:1.4; display:inline-block;}
-.twidget-age-select .twidget-num input{width:100%; padding:0; text-align:center;}
+.twidget-age-select .twidget-num{width: 25%; text-align:center; line-height:1.4; display:inline-block;}
+.twidget-age-select .twidget-num input{ font-size: 14px; width:100%; padding:0; text-align:center; border: none; outline: none;}
 .twidget-age-select .twidget-inc{width:35px; height:35px; display:inline-block; text-indent:-9999px;cursor:pointer; border-radius:25px; line-height:35px; background:#fff 50% 50%/14px no-repeat; background-image:url('./images/plus.svg');}
 .twidget-age-select .twidget-inc:hover{background-color:#e0e0e0; }
 .twidget-age-select input{-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}
 .twidget-age-select input::selection {color:currentColor;background:transparent}
 .twidget-pas-class{display:table; width:100%; height:44px; border-top:1px solid #e0e0e0;}
-.twidget-pas-class .twidget-pass-check{display:table-cell; vertical-align:middle;padding-left:20px;}
+.twidget-pas-class .twidget-pass-check{display:table-cell; vertical-align:middle; padding-left:20px; padding-top: 10px;}
 .twidget-pas-class .twidget-pass-check input[type="checkbox"]{display:none;}
 .twidget-pas-class .twidget-pass-check label{line-height:16px; cursor:pointer; position:relative; padding-left:24px; display:inline-block; color: #424242; font-size: 14px;}
 .twidget-pas-class .twidget-pass-check label:before{position:absolute; content:""; top:0; left:0; width:14px; height:14px; border:1px solid #0C73FE;}
 .twidget-pas-class .twidget-pass-check input[type="checkbox"]:checked+label:before{background:url('data:image/svg+xml,%3Csvg%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%208.5%206%22%3E%3Cstyle%3E.st0%7Bfill%3A%2300B9FF%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M8.5%201.1L7.4%200%203.6%203.8%201.1%201.3%200%202.4%203.6%206z%22%2F%3E%3C%2Fsvg%3E') no-repeat 50% 50%; background-size:12px;}
 .twidget-passengers-ready-button-wrapper { vertical-align: middle; text-align: center; display: block!important; margin-top: 5px; margin-bottom: 20px; }
-.twidget-passengers-ready-button {display: inline-block; padding: 0 30px; font-size: 13px; line-height: 43px; border: 1px solid #ffa600!important; border-radius: 40px; text-align: center; margin: 0 auto; color: #ffa600; cursor: pointer; clear: both; }
-.twidget-passengers-ready-button:hover { border-color: #ffaf1a; color: #ffaf1a;}
+.twidget-passengers-ready-button {display: inline-block; padding: 0 30px; font-size: 13px; line-height: 43px; border: 1px solid #FF6F32!important; border-radius: 20px; text-align: center; margin: 0 auto; color: #FF6F32; cursor: pointer; clear: both; }
+.twidget-passengers-ready-button:hover { border-color: #FF6F32; color: #FF6F32;}
 
 /*hotel*/
 #twidget-tab2 .twidget-form-list li.twidget-city-hotel{width:39%;}
@@ -170,65 +174,69 @@ div, span, p, ol, ul, li, table, tbody, tfoot, thead, tr, th, td{
 
 @media (max-width: 10000px){
     #twidget-tab1 .twidget-form-list li.twidget-origin input{border-radius: 10px 0 0 10px;}
-    #twidget-tab1 .twidget-form-list li.twidget-origin{width:288px; margin-bottom:15px;}
-    #twidget-tab1 .twidget-form-list li.twidget-destination{width:288px; margin-bottom:15px;}
-    .twidget-return-date {width: 288px; padding-left: 3px;}
-    .twidget-dep-date {width: 288px;}
-    #twidget-tab1 .twidget-form-list li.twidget-passengers{width:288px; margin-left: -1px;}
-    #twidget-tab1 .twidget-form-list li.twidget-passengers div{border-radius: 0 10px 10px 0;}
+    #twidget-tab1 .twidget-form-list li.twidget-origin{width:284px; margin-bottom:15px;}
+    #twidget-tab1 .twidget-form-list li.twidget-destination{width:284px; margin-bottom:15px;}
+    .twidget-return-date {width: 284px; padding-left: 3px;}
+    .twidget-dep-date {width: 284px;}
+    .twidget-passengers-detail {border-radius: 0 15px 15px 0;}
+    #twidget-tab1 .twidget-form-list li.twidget-passengers{width:284px; margin-left: -1px;}
     #twidget-tab1 .twidget-form-list li.twidget-submit-button{width: 230px; margin-left: 5px;}
     .twidget-tab-content .twidget-tab-bottom{height:0px;}
-    #twidget-tab1 {margin-left: 2.4%;}
     }
 
 @media (max-width: 2560px){
     #twidget-tab1 .twidget-form-list li.twidget-origin input{border-radius: 10px 0 0 10px;}
-    #twidget-tab1 .twidget-form-list li.twidget-origin{width:288px; margin-bottom:15px;}
-    #twidget-tab1 .twidget-form-list li.twidget-destination{width:288px; margin-bottom:15px;}
-    .twidget-return-date {width: 288px; padding-left: 3px;}
-    .twidget-dep-date {width: 288px;}
-    #twidget-tab1 .twidget-form-list li.twidget-passengers{width:288px; margin-left: -1px;}
-    #twidget-tab1 .twidget-form-list li.twidget-passengers div{border-radius: 0 10px 10px 0;}
+    #twidget-tab1 .twidget-form-list li.twidget-origin{width:284px; margin-bottom:15px;}
+    #twidget-tab1 .twidget-form-list li.twidget-destination{width:284px; margin-bottom:15px;}
+    .twidget-return-date {width: 284px; padding-left: 3px;}
+    .twidget-dep-date {width: 284px;}
+    #twidget-tab1 .twidget-form-list li.twidget-passengers{width:284px; margin-left: -1px;}
     #twidget-tab1 .twidget-form-list li.twidget-submit-button{width: 230px; margin-left: 5px;}
     .twidget-tab-content .twidget-tab-bottom{height:0px;}
     }
 
 @media (max-width: 1920px){
     #twidget-tab1 .twidget-form-list li.twidget-origin input{border-radius: 10px 0 0 10px;}
-    #twidget-tab1 .twidget-form-list li.twidget-origin{width:288px; margin-bottom:15px;}
-    #twidget-tab1 .twidget-form-list li.twidget-destination{width:288px; margin-bottom:15px;}
-    .twidget-return-date {width: 288px; padding-left: 3px;}
-    .twidget-dep-date {width: 288px;}
-    #twidget-tab1 .twidget-form-list li.twidget-passengers{width:288px; margin-left: -1px;}
-    #twidget-tab1 .twidget-form-list li.twidget-passengers div{border-radius: 0 10px 10px 0;}
+    #twidget-tab1 .twidget-form-list li.twidget-origin{width:284px; margin-bottom:15px;}
+    #twidget-tab1 .twidget-form-list li.twidget-destination{width:284px; margin-bottom:15px;}
+    .twidget-return-date {width: 284px; padding-left: 3px;}
+    .twidget-dep-date {width: 284px;}
+    #twidget-tab1 .twidget-form-list li.twidget-passengers{width:284px; margin-left: -1px;}
     #twidget-tab1 .twidget-form-list li.twidget-submit-button{width: 230px; margin-left: 5px;}
     .twidget-tab-content .twidget-tab-bottom{height:0px;}
+    #twidget-passenger-form {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 1650px) {
-    .twidget-container{width:auto;}
 #twidget-tab1 .twidget-form-list li.twidget-origin input{border-radius: 10px 0 0 10px;}
-#twidget-tab1 .twidget-form-list li.twidget-origin{width:20%; margin-bottom:15px;}
-#twidget-tab1 .twidget-form-list li.twidget-destination{width:20%; margin-bottom:15px;}
-.twidget-return-date {width: 20%; padding-left: 3px;}
-.twidget-dep-date {width: 20%;}
-#twidget-tab1 .twidget-form-list li.twidget-passengers{width:20%; margin-left: -1px;}
-#twidget-tab1 .twidget-form-list li.twidget-passengers div{border-radius: 0 10px 10px 0;}
-#twidget-tab1 .twidget-form-list li.twidget-submit-button{width: 12%; margin-left: 5px;}
+#twidget-tab1 .twidget-form-list li.twidget-origin{width:214px; margin-bottom:15px;}
+#twidget-tab1 .twidget-form-list li.twidget-destination{width:214px; margin-bottom:15px;}
+.twidget-return-date {width: 214px; padding-left: 3px;}
+.twidget-dep-date {width: 214px;}
+#twidget-tab1 .twidget-form-list li.twidget-passengers{width:214px; margin-left: -1px;}
+#twidget-tab1 .twidget-form-list li.twidget-submit-button{width: 190px; margin-left: 5px;}
 .twidget-tab-content .twidget-tab-bottom{height:0px;}
-#twidget-tab1 {margin-left: 0%;}
+.twidget-age-group li .twidget-age-name {
+    width: 40%;
+}
+#twidget-passenger-form {
+    width: 250px;
+    font-size: 10px;
+}
+.twidget-age-group{display:table; width:250px;}
 }
 
 
 @media (max-width: 1300px) {
 #twidget-tab1 .twidget-form-list li.twidget-origin input{border-radius: 10px 0 0 10px;}
-#twidget-tab1 .twidget-form-list li.twidget-origin{width:20%; margin-bottom:15px;}
-#twidget-tab1 .twidget-form-list li.twidget-destination{width:20%; margin-bottom:15px;}
-.twidget-return-date {width: 20%; padding-left: 3px;}
-.twidget-dep-date {width: 20%;}
-#twidget-tab1 .twidget-form-list li.twidget-passengers{width:20%; margin-left: -1px;}
-#twidget-tab1 .twidget-form-list li.twidget-passengers div{border-radius: 0 10px 10px 0;}
-#twidget-tab1 .twidget-form-list li.twidget-submit-button{width:11%; margin-left: 5px;}
+#twidget-tab1 .twidget-form-list li.twidget-origin{width:144px; margin-bottom:15px;}
+#twidget-tab1 .twidget-form-list li.twidget-destination{width:144px; margin-bottom:15px;}
+.twidget-return-date {width: 144px; padding-left: 3px;}
+.twidget-dep-date {width: 144px;}
+#twidget-tab1 .twidget-form-list li.twidget-passengers{width:144px; margin-left: -1px;}
+#twidget-tab1 .twidget-form-list li.twidget-submit-button{width:144px; margin-left: 5px;}
 .twidget-tab-content .twidget-tab-bottom{height:0px;}
 }
 
@@ -253,20 +261,37 @@ div, span, p, ol, ul, li, table, tbody, tfoot, thead, tr, th, td{
 #twidget-tab2 .twidget-form-list li.twidget-submit-button{width:100%;}
 }
 @media (max-width: 550px){
+    .twidget-form-list {
+        margin-left: 9vw;
+    }
+    #twidget-tab1 {margin-left: 0px; }
     .twidget-form-list li.input-daterange .twidget-input-box .twidget-icon-cal {margin-top: 0px; margin-right: 0px; display: block;}
     .twidget-tab-content .twidget-tab-bottom{height:20px;}
     .twidget-tab-content {
-        padding-left: 10vw;
-        width: 100vw;
+        width: 100%;
         border-radius: 0;
     }
     #twidget-tab1 .twidget-form-list li.twidget-origin input{border-radius: 10px 10px 0 0;}
-    #twidget-tab1 .twidget-form-list li.twidget-origin{margin-bottom:0px; max-width: 90%;}
-    #twidget-tab1 .twidget-form-list li.twidget-destination{margin-bottom:0px; max-width: 90%;}
-    #twidget-tab1 .twidget-form-list li.twidget-flight-dates{margin-bottom: 0px; max-width: 90%;}
+    #twidget-tab1 .twidget-form-list li.twidget-origin{margin-bottom:-10px; max-width: 89.91%;}
+    #twidget-tab1 .twidget-form-list li.twidget-destination{margin-bottom:-10px; max-width: 89.9%;}
+    #twidget-tab1 .twidget-form-list li.twidget-flight-dates{margin-bottom: -10px; max-width: 90%;}
     #twidget-tab1 .twidget-form-list li.twidget-passengers{margin-bottom: 0px; max-width: 90%;}
-    #twidget-tab1 .twidget-form-list li.twidget-passengers div{border-radius: 0 0 10px 10px;}
+    .twidget-passengers-detail {border-radius: 0 0px 10px 10px;}
     #twidget-tab1 .twidget-form-list li.twidget-submit-button{margin-left: 0px; max-width: 90%;}
+    #twidget-passenger-form {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .twidget-age-group li .twidget-age-name {
+        width: 50%;
+    }
+
+    .twidget-passengers-ready-button {
+        margin-left: 0;
+    }
 
 
 .twidget-tab-content .twidget-title{display: none;}

@@ -34,18 +34,19 @@
   <link rel="stylesheet prefetch" href="av/bootstrap-datepicker3.standalone.css">
   <link rel="stylesheet" type="text/css" href="av/style.css">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap" rel="stylesheet">
+
 </head>
 <body>
-  <button class="btn text-white toggle-app-side" data-bs-toggle="collapse" data-bs-target=".app__sidebar">Фильтры</button>
+  <button class="btn text-white toggle-app-side" data-bs-toggle="collapse" data-bs-target=".app__sidebar" aria-expanded="true">
+    <img src="assets\img\filter.svg" style="height: 19px; margin-right: 7px;">Фильтры</button>
     <!--adding js files-->
     <script src="av/jquery.js?z=12"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-dateFormat/1.0/jquery.dateFormat.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/js/bootstrap-datepicker.min.js"></script>
     <script src="av/jquery.twidget.js?z=<?php echo time();?>"></script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap" rel="stylesheet">
 
   <!-- ======= Header ======= -->
   <div class="bgrnd"></div>
@@ -216,7 +217,7 @@
 
         </li><!-- End Messages Nav -->
 
-        <li class="nav-item dropdown pe-3">
+        <li class="nav-item dropdown">
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
             <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
@@ -532,7 +533,7 @@
 
   <main id="main" class="main">
 
-    <div class="app__sidebar">
+    <div class="app__sidebar collapse">
       <div class="direction-subscriptions">
         <button class="button_278c41a secondaryOutline_278c41a large_278c41a direction-subscriptions__btn-subs" type="button" data-test-id="button">
           <span class="text_278c41a">
@@ -563,7 +564,31 @@
                 </span>
               </span>
             </div>
-            <div class="filter-row checkbox-row --with-hover"><label class="container_68f2613 checkbox-row__checkbox" data-test-id="checkbox"><input type="checkbox"><span class="checkbox_68f2613"><svg class="icon_68f2613" width="15" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M13.88 1.951l-8 8a1.14 1.14 0 01-1.616 0L.835 6.523a1.142 1.142 0 111.616-1.616l2.62 2.62L12.265.335a1.142 1.142 0 111.616 1.616z" fill="currentColor"></path></svg></span></label><div class="body-2-regular_03dd9f9 mobile-body-2-regular_03dd9f9 checkbox-row__content" data-test-id="text">2 пересадки</div><span class="price_85d2b9c filter-price">44 289 <span data-test-id="currency-sign" data-font-type="default" class="currencySign_ec6889d">₽</span></span></div><div class="filter-row checkbox-row --with-hover"><label class="container_68f2613 checkbox-row__checkbox" data-test-id="checkbox"><input type="checkbox"><span class="checkbox_68f2613"><svg class="icon_68f2613" width="15" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M13.88 1.951l-8 8a1.14 1.14 0 01-1.616 0L.835 6.523a1.142 1.142 0 111.616-1.616l2.62 2.62L12.265.335a1.142 1.142 0 111.616 1.616z" fill="currentColor"></path></svg></span></label><div class="body-2-regular_03dd9f9 mobile-body-2-regular_03dd9f9 checkbox-row__content" data-test-id="text">3 пересадки</div><span class="price_85d2b9c filter-price">48 041 <span data-test-id="currency-sign" data-font-type="default" class="currencySign_ec6889d">₽</span></span></div></div></div><div class="filter-row range-filter"><div class="range-head"><div class="body-2-regular_03dd9f9 mobile-body-2-regular_03dd9f9 single-line_03dd9f9 range-head__content" data-test-id="text">Длительность пересадок</div><div class="tag_487d723 range-head__tag"><div class="body-3-semi_03dd9f9 mobile-body-3-semi_03dd9f9" data-test-id="text">До 25ч</div></div></div><div class="range-filter__slider-wrap"><div class="range-filter__slider"><div body-scroll-lock-ignore=""><div class="rc-slider rc-slider-with-marks"><div class="rc-slider-rail"></div><div class="rc-slider-track rc-slider-track-1" style="left: 0%; right: auto; width: 100%;"></div><div class="rc-slider-step"><span class="rc-slider-dot rc-slider-dot-active" style="left: 16.6667%;"></span><span class="rc-slider-dot rc-slider-dot-active" style="left: 33.3333%;"></span><span class="rc-slider-dot rc-slider-dot-active" style="left: 50%;"></span></div><div tabindex="0" class="rc-slider-handle rc-slider-handle-1" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-disabled="false" style="left: 0%; right: auto; transform: translateX(-50%);"></div><div tabindex="0" class="rc-slider-handle rc-slider-handle-2" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" aria-disabled="false" style="left: 100%; right: auto; transform: translateX(-50%);"></div><div class="rc-slider-mark"><span class="rc-slider-mark-text rc-slider-mark-text-active" style="transform: translateX(-50%); left: 16.6667%;">4</span><span class="rc-slider-mark-text rc-slider-mark-text-active" style="transform: translateX(-50%); left: 33.3333%;">8</span><span class="rc-slider-mark-text rc-slider-mark-text-active" style="transform: translateX(-50%); left: 50%;">12</span></div></div></div></div></div></div><div class="filter-group --is-open"><div class="filter-header --old --with-divider"><div class="body-3-semi_03dd9f9 mobile-body-3-semi_03dd9f9 single-line_03dd9f9 filter-header__title" data-test-id="text">Если комфорт важнее</div></div><div class="filter-group__content"><div class="filter-row switch-row --with-hover"><div class="body-2-regular_03dd9f9 mobile-body-2-regular_03dd9f9 switch-row__content" data-test-id="text">Без смены аэропорта</div><div class="switch-row__info"></div><div class="switch-row__switch"><label class="container_e70094a medium_e70094a" data-test-id="switch"><input type="checkbox"><span class="checkbox_e70094a"></span></label></div></div><div class="filter-row switch-row --with-hover"><div class="body-2-regular_03dd9f9 mobile-body-2-regular_03dd9f9 switch-row__content" data-test-id="text">Без ночных пересадок</div><div class="switch-row__info"></div><div class="switch-row__switch"><label class="container_e70094a medium_e70094a" data-test-id="switch"><input type="checkbox"><span class="checkbox_e70094a"></span></label></div></div></div></div>
+            <div class="filter-row checkbox-row --with-hover">
+              <label class="container_68f2613 checkbox-row__checkbox" data-test-id="checkbox">
+                <input type="checkbox">
+                <span class="checkbox_68f2613">
+                  <svg class="icon_68f2613" width="15" height="11" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.88 1.951l-8 8a1.14 1.14 0 01-1.616 0L.835 6.523a1.142 1.142 0 111.616-1.616l2.62 2.62L12.265.335a1.142 1.142 0 111.616 1.616z" fill="currentColor">
+                    </path>
+                  </svg>
+                </span>
+              </label>
+              <div class="body-2-regular_03dd9f9 mobile-body-2-regular_03dd9f9 checkbox-row__content" data-test-id="text">2 пересадки</div>
+              <span class="price_85d2b9c filter-price">44 289 
+                <span data-test-id="currency-sign" data-font-type="default" class="currencySign_ec6889d">₽</span>
+              </span>
+            </div>
+            <div class="filter-row checkbox-row --with-hover">
+              <label class="container_68f2613 checkbox-row__checkbox" data-test-id="checkbox">
+                <input type="checkbox">
+                <span class="checkbox_68f2613">
+                  <svg class="icon_68f2613" width="15" height="11" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.88 1.951l-8 8a1.14 1.14 0 01-1.616 0L.835 6.523a1.142 1.142 0 111.616-1.616l2.62 2.62L12.265.335a1.142 1.142 0 111.616 1.616z" fill="currentColor"></path>
+                  </svg>
+                </span>
+              </label>
+              <div class="body-2-regular_03dd9f9 mobile-body-2-regular_03dd9f9 checkbox-row__content" data-test-id="text">3 пересадки</div><span class="price_85d2b9c filter-price">48 041 <span data-test-id="currency-sign" data-font-type="default" class="currencySign_ec6889d">₽</span></span></div></div></div><div class="filter-row range-filter"><div class="range-head"><div class="body-2-regular_03dd9f9 mobile-body-2-regular_03dd9f9 single-line_03dd9f9 range-head__content" data-test-id="text">Длительность пересадок</div><div class="tag_487d723 range-head__tag"><div class="body-3-semi_03dd9f9 mobile-body-3-semi_03dd9f9" data-test-id="text">До 25ч</div></div></div><div class="range-filter__slider-wrap"><div class="range-filter__slider"><div body-scroll-lock-ignore=""><div class="rc-slider rc-slider-with-marks"><div class="rc-slider-rail"></div><div class="rc-slider-track rc-slider-track-1" style="left: 0%; right: auto; width: 100%;"></div><div class="rc-slider-step"><span class="rc-slider-dot rc-slider-dot-active" style="left: 16.6667%;"></span><span class="rc-slider-dot rc-slider-dot-active" style="left: 33.3333%;"></span><span class="rc-slider-dot rc-slider-dot-active" style="left: 50%;"></span></div><div tabindex="0" class="rc-slider-handle rc-slider-handle-1" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-disabled="false" style="left: 0%; right: auto; transform: translateX(-50%);"></div><div tabindex="0" class="rc-slider-handle rc-slider-handle-2" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" aria-disabled="false" style="left: 100%; right: auto; transform: translateX(-50%);"></div><div class="rc-slider-mark"><span class="rc-slider-mark-text rc-slider-mark-text-active" style="transform: translateX(-50%); left: 16.6667%;">4</span><span class="rc-slider-mark-text rc-slider-mark-text-active" style="transform: translateX(-50%); left: 33.3333%;">8</span><span class="rc-slider-mark-text rc-slider-mark-text-active" style="transform: translateX(-50%); left: 50%;">12</span></div></div></div></div></div></div><div class="filter-group --is-open"><div class="filter-header --old --with-divider"><div class="body-3-semi_03dd9f9 mobile-body-3-semi_03dd9f9 single-line_03dd9f9 filter-header__title" data-test-id="text">Если комфорт важнее</div></div><div class="filter-group__content"><div class="filter-row switch-row --with-hover"><div class="body-2-regular_03dd9f9 mobile-body-2-regular_03dd9f9 switch-row__content" data-test-id="text">Без смены аэропорта</div><div class="switch-row__info"></div><div class="switch-row__switch"><label class="container_e70094a medium_e70094a" data-test-id="switch"><input type="checkbox"><span class="checkbox_e70094a"></span></label></div></div><div class="filter-row switch-row --with-hover"><div class="body-2-regular_03dd9f9 mobile-body-2-regular_03dd9f9 switch-row__content" data-test-id="text">Без ночных пересадок</div><div class="switch-row__info"></div><div class="switch-row__switch"><label class="container_e70094a medium_e70094a" data-test-id="switch"><input type="checkbox"><span class="checkbox_e70094a"></span></label></div></div></div></div>
             <div id="firstGroup" class="filter-group DefClose departure-arrival-filter">
               <div id="firstHeader" class="filter-header --old --with-divider --is-clickable">
                 <div class="body-3-semi_03dd9f9 mobile-body-3-semi_03dd9f9 single-line_03dd9f9 filter-header__title" data-test-id="text">Вылет в&nbsp;Душанбе</div>
@@ -597,7 +622,7 @@
                     <div id="twelfthHeader" class="filter-header --old --with-divider --is-clickable"><div class="body-3-semi_03dd9f9 mobile-body-3-semi_03dd9f9 single-line_03dd9f9 filter-header__title" data-test-id="text">Способы оплаты</div><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" data-test-id="icon" class="icon_0ce8f7f filter-header__open-icon --dropdown" aria-hidden="true"><path d="M13.948 20.634L6.243 12.61a.888.888 0 010-1.222l7.705-8.023a1.17 1.17 0 011.7 0 1.29 1.29 0 010 1.77L9.058 12l6.59 6.863c.469.489.469 1.282 0 1.77a1.17 1.17 0 01-1.7 0z"></path></svg></div><div class="filter-group__content"><div class="filter-row checkbox-row --with-hover"><label class="container_68f2613 checkbox-row__checkbox" data-test-id="checkbox"><input type="checkbox" checked=""><span class="checkbox_68f2613"><svg class="icon_68f2613" width="15" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M13.88 1.951l-8 8a1.14 1.14 0 01-1.616 0L.835 6.523a1.142 1.142 0 111.616-1.616l2.62 2.62L12.265.335a1.142 1.142 0 111.616 1.616z" fill="currentColor"></path></svg></span></label><div class="body-2-regular_03dd9f9 mobile-body-2-regular_03dd9f9 checkbox-row__content" data-test-id="text">Выбрать все</div></div><div class="filter-row checkbox-row --with-hover"><label class="container_68f2613 checkbox-row__checkbox" data-test-id="checkbox"><input type="checkbox"><span class="checkbox_68f2613"><svg class="icon_68f2613" width="15" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M13.88 1.951l-8 8a1.14 1.14 0 01-1.616 0L.835 6.523a1.142 1.142 0 111.616-1.616l2.62 2.62L12.265.335a1.142 1.142 0 111.616 1.616z" fill="currentColor"></path></svg></span></label><div class="body-2-regular_03dd9f9 mobile-body-2-regular_03dd9f9 checkbox-row__content" data-test-id="text">По карте</div><span class="price_85d2b9c filter-price">44 289 <span data-test-id="currency-sign" data-font-type="default" class="currencySign_ec6889d">₽</span></span></div><div class="filter-row checkbox-row --with-hover"><label class="container_68f2613 checkbox-row__checkbox" data-test-id="checkbox"><input type="checkbox"><span class="checkbox_68f2613"><svg class="icon_68f2613" width="15" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M13.88 1.951l-8 8a1.14 1.14 0 01-1.616 0L.835 6.523a1.142 1.142 0 111.616-1.616l2.62 2.62L12.265.335a1.142 1.142 0 111.616 1.616z" fill="currentColor"></path></svg></span></label><div class="body-2-regular_03dd9f9 mobile-body-2-regular_03dd9f9 checkbox-row__content" data-test-id="text">Moneywall</div><span class="price_85d2b9c filter-price">44 289 <span data-test-id="currency-sign" data-font-type="default" class="currencySign_ec6889d">₽</span></span></div></div></div>
                   
                   <div id="thirteenthGroup" class="filter-group DefClose">
-                    <div id="thirteenthHeader" class="filter-header --old --with-divider --is-clickable"><div class="body-3-semi_03dd9f9 mobile-body-3-semi_03dd9f9 single-line_03dd9f9 filter-header__title" data-test-id="text">Сортировка</div><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" data-test-id="icon" class="icon_0ce8f7f filter-header__open-icon --dropdown" aria-hidden="true"><path d="M13.948 20.634L6.243 12.61a.888.888 0 010-1.222l7.705-8.023a1.17 1.17 0 011.7 0 1.29 1.29 0 010 1.77L9.058 12l6.59 6.863c.469.489.469 1.282 0 1.77a1.17 1.17 0 01-1.7 0z"></path></svg></div><div class="filter-group__content"><div data-selene-widget="sorting_desktop"><div><div class="EYUNog4pPHzmRhZ3fJFQ WauaX6LBiyCkXpVSZTAi QJE5wshHba4pGNJgX74s"><label class="container_3afdb7c fpJo4cgB9c0Ig5_jJKyi" data-test-id="radio-button"><input type="radio" value="best" checked=""><span class="radio_3afdb7c"></span><div class="body-3-regular_03dd9f9 mobile-body-2-regular_03dd9f9 pqr584GxgOdmu9KkZo88" data-test-id="text">Сначала рекомендуемые</div></label></div><div class="EYUNog4pPHzmRhZ3fJFQ WauaX6LBiyCkXpVSZTAi QJE5wshHba4pGNJgX74s"><label class="container_3afdb7c fpJo4cgB9c0Ig5_jJKyi" data-test-id="radio-button"><input type="radio" value="cheapest"><span class="radio_3afdb7c"></span><div class="body-3-regular_03dd9f9 mobile-body-2-regular_03dd9f9 pqr584GxgOdmu9KkZo88" data-test-id="text">Сначала дешёвые</div></label></div><div class="EYUNog4pPHzmRhZ3fJFQ WauaX6LBiyCkXpVSZTAi QJE5wshHba4pGNJgX74s"><label class="container_3afdb7c fpJo4cgB9c0Ig5_jJKyi" data-test-id="radio-button"><input type="radio" value="departure_time"><span class="radio_3afdb7c"></span><div class="body-3-regular_03dd9f9 mobile-body-2-regular_03dd9f9 pqr584GxgOdmu9KkZo88" data-test-id="text">Время вылета</div></label></div><div class="EYUNog4pPHzmRhZ3fJFQ WauaX6LBiyCkXpVSZTAi QJE5wshHba4pGNJgX74s"><label class="container_3afdb7c fpJo4cgB9c0Ig5_jJKyi" data-test-id="radio-button"><input type="radio" value="arrival_time"><span class="radio_3afdb7c"></span><div class="body-3-regular_03dd9f9 mobile-body-2-regular_03dd9f9 pqr584GxgOdmu9KkZo88" data-test-id="text">Время прибытия</div></label></div><div class="EYUNog4pPHzmRhZ3fJFQ WauaX6LBiyCkXpVSZTAi QJE5wshHba4pGNJgX74s"><label class="container_3afdb7c fpJo4cgB9c0Ig5_jJKyi" data-test-id="radio-button"><input type="radio" value="transfer_duration"><span class="radio_3afdb7c"></span><div class="body-3-regular_03dd9f9 mobile-body-2-regular_03dd9f9 pqr584GxgOdmu9KkZo88" data-test-id="text">Длительность пересадок</div></label></div><div class="EYUNog4pPHzmRhZ3fJFQ WauaX6LBiyCkXpVSZTAi QJE5wshHba4pGNJgX74s"><label class="container_3afdb7c fpJo4cgB9c0Ig5_jJKyi" data-test-id="radio-button"><input type="radio" value="trip_duration"><span class="radio_3afdb7c"></span><div class="body-3-regular_03dd9f9 mobile-body-2-regular_03dd9f9 pqr584GxgOdmu9KkZo88" data-test-id="text">Длительность поездки</div></label></div><div class="EYUNog4pPHzmRhZ3fJFQ WauaX6LBiyCkXpVSZTAi QJE5wshHba4pGNJgX74s"><label class="container_3afdb7c fpJo4cgB9c0Ig5_jJKyi" data-test-id="radio-button"><input type="radio" value="rating"><span class="radio_3afdb7c"></span><div class="body-3-regular_03dd9f9 mobile-body-2-regular_03dd9f9 pqr584GxgOdmu9KkZo88" data-test-id="text">Рейтинг</div></label></div><div class="EYUNog4pPHzmRhZ3fJFQ WauaX6LBiyCkXpVSZTAi QJE5wshHba4pGNJgX74s"><label class="container_3afdb7c fpJo4cgB9c0Ig5_jJKyi" data-test-id="radio-button"><input type="radio" value="popularity"><span class="radio_3afdb7c"></span><div class="body-3-regular_03dd9f9 mobile-body-2-regular_03dd9f9 pqr584GxgOdmu9KkZo88" data-test-id="text">Популярность</div></label></div></div></div></div></div></div></div>
+                    <div id="thirteenthHeader" class="filter-header --old --with-divider --is-clickable"><div class="body-3-semi_03dd9f9 mobile-body-3-semi_03dd9f9 single-line_03dd9f9 filter-header__title" data-test-id="text">Сортировка</div><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" data-test-id="icon" class="icon_0ce8f7f filter-header__open-icon --dropdown" aria-hidden="true"><path d="M13.948 20.634L6.243 12.61a.888.888 0 010-1.222l7.705-8.023a1.17 1.17 0 011.7 0 1.29 1.29 0 010 1.77L9.058 12l6.59 6.863c.469.489.469 1.282 0 1.77a1.17 1.17 0 01-1.7 0z"></path></svg></div><div class="filter-group__content"><div data-selene-widget="sorting_desktop"><div><div class="EYUNog4pPHzmRhZ3fJFQ WauaX6LBiyCkXpVSZTAi QJE5wshHba4pGNJgX74s"><label class="container_3afdb7c fpJo4cgB9c0Ig5_jJKyi" data-test-id="radio-button"><input type="radio" name="sort" value="best" checked=""><span class="radio_3afdb7c"></span><div class="body-3-regular_03dd9f9 mobile-body-2-regular_03dd9f9 pqr584GxgOdmu9KkZo88" data-test-id="text">Сначала рекомендуемые</div></label></div><div class="EYUNog4pPHzmRhZ3fJFQ WauaX6LBiyCkXpVSZTAi QJE5wshHba4pGNJgX74s"><label class="container_3afdb7c fpJo4cgB9c0Ig5_jJKyi" data-test-id="radio-button"><input type="radio" name="sort" value="cheapest"><span class="radio_3afdb7c"></span><div class="body-3-regular_03dd9f9 mobile-body-2-regular_03dd9f9 pqr584GxgOdmu9KkZo88" data-test-id="text">Сначала дешёвые</div></label></div><div class="EYUNog4pPHzmRhZ3fJFQ WauaX6LBiyCkXpVSZTAi QJE5wshHba4pGNJgX74s"><label class="container_3afdb7c fpJo4cgB9c0Ig5_jJKyi" data-test-id="radio-button"><input type="radio" name="sort" value="departure_time"><span class="radio_3afdb7c"></span><div class="body-3-regular_03dd9f9 mobile-body-2-regular_03dd9f9 pqr584GxgOdmu9KkZo88" data-test-id="text">Время вылета</div></label></div><div class="EYUNog4pPHzmRhZ3fJFQ WauaX6LBiyCkXpVSZTAi QJE5wshHba4pGNJgX74s"><label class="container_3afdb7c fpJo4cgB9c0Ig5_jJKyi" data-test-id="radio-button"><input type="radio" name="sort" value="arrival_time"><span class="radio_3afdb7c"></span><div class="body-3-regular_03dd9f9 mobile-body-2-regular_03dd9f9 pqr584GxgOdmu9KkZo88" data-test-id="text">Время прибытия</div></label></div><div class="EYUNog4pPHzmRhZ3fJFQ WauaX6LBiyCkXpVSZTAi QJE5wshHba4pGNJgX74s"><label class="container_3afdb7c fpJo4cgB9c0Ig5_jJKyi" data-test-id="radio-button"><input type="radio" name="sort" value="transfer_duration"><span class="radio_3afdb7c"></span><div class="body-3-regular_03dd9f9 mobile-body-2-regular_03dd9f9 pqr584GxgOdmu9KkZo88" data-test-id="text">Длительность пересадок</div></label></div><div class="EYUNog4pPHzmRhZ3fJFQ WauaX6LBiyCkXpVSZTAi QJE5wshHba4pGNJgX74s"><label class="container_3afdb7c fpJo4cgB9c0Ig5_jJKyi" data-test-id="radio-button"><input type="radio" name="sort" value="trip_duration"><span class="radio_3afdb7c"></span><div class="body-3-regular_03dd9f9 mobile-body-2-regular_03dd9f9 pqr584GxgOdmu9KkZo88" data-test-id="text">Длительность поездки</div></label></div><div class="EYUNog4pPHzmRhZ3fJFQ WauaX6LBiyCkXpVSZTAi QJE5wshHba4pGNJgX74s"><label class="container_3afdb7c fpJo4cgB9c0Ig5_jJKyi" data-test-id="radio-button"><input type="radio" name="sort" value="rating"><span class="radio_3afdb7c"></span><div class="body-3-regular_03dd9f9 mobile-body-2-regular_03dd9f9 pqr584GxgOdmu9KkZo88" data-test-id="text">Рейтинг</div></label></div><div class="EYUNog4pPHzmRhZ3fJFQ WauaX6LBiyCkXpVSZTAi QJE5wshHba4pGNJgX74s"><label class="container_3afdb7c fpJo4cgB9c0Ig5_jJKyi" data-test-id="radio-button"><input type="radio" name="sort" value="popularity"><span class="radio_3afdb7c"></span><div class="body-3-regular_03dd9f9 mobile-body-2-regular_03dd9f9 pqr584GxgOdmu9KkZo88" data-test-id="text">Популярность</div></label></div></div></div></div></div></div></div>
     
               
                 <!--
@@ -617,8 +642,17 @@
       <div class="row">
 
         <!-- center side columns -->
-        <div class="col-xl-6 col-sm-12 mainside">
+        <div class="mainside">
           <div class="row">
+
+            <div class="card perelet">
+              <div class="leftCard">
+                <h1 class="LC pricer">2 491 SM</h1>
+                <button class="select-fly btn LC">Выбрать билет</button>
+                <p class="cours LC">14203 руб по курсу 0.145</p>
+                <p class="count LC">Осталось 5 билетов по этой цене</p>
+              </div>
+            </div>
 
             <!-- Sales Card -->
                 <!--
@@ -691,7 +725,7 @@
             <!-- Customers Card -->
             <div class="col-xxl-4 col-xl-12">
 
-              <div class="card info-card customers-card">
+              <!--<div class="card info-card customers-card">
 
                 <div class="filter">
                   <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
@@ -723,10 +757,10 @@
                 </div>
               </div>
 
-            </div><!-- End Customers Card -->
+            </div>--><!-- End Customers Card -->
 
             <!-- Reports -->
-            <div class="col-12">
+            <!--<div class="col-12">
               <div class="card">
 
                 <div class="filter">
@@ -745,8 +779,8 @@
                 <div class="card-body">
                   <h5 class="card-title">Reports <span>/Today</span></h5>
 
-                  <!-- Line Chart -->
-                  <div id="reportsChart"></div>
+                --><!-- Line Chart -->
+                  <!--<div id="reportsChart"></div>
 
                   <script>
                     document.addEventListener("DOMContentLoaded", () => {
@@ -800,15 +834,15 @@
                       }).render();
                     });
                   </script>
-                  <!-- End Line Chart -->
+                --><!-- End Line Chart -->
 
-                </div>
+                <!--</div>
 
               </div>
-            </div><!-- End Reports -->
+            </div>--><!-- End Reports -->
 
             <!-- Recent Sales -->
-            <div class="col-12">
+            <!--<div class="col-12">
               <div class="card recent-sales overflow-auto">
 
                 <div class="filter">
@@ -879,10 +913,10 @@
                 </div>
 
               </div>
-            </div><!-- End Recent Sales -->
+            </div>--><!-- End Recent Sales -->
 
             <!-- Top Selling -->
-            <div class="col-12">
+            <!--<div class="col-12">
               <div class="card top-selling overflow-auto">
 
                 <div class="filter">
@@ -953,13 +987,13 @@
                 </div>
 
               </div>
-            </div><!-- End Top Selling -->
+            </div>--><!-- End Top Selling -->
 
-          </div>
+          <!--</div>-->
         
 
           <!-- Recent Activity -->
-          <div class="card">
+          <!--<div class="card">
             <div class="filter">
               <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
               <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
@@ -984,55 +1018,55 @@
                   <div class="activity-content">
                     Quia quae rerum <a href="#" class="fw-bold text-dark">explicabo officiis</a> beatae
                   </div>
-                </div><!-- End activity item-->
+                </div>--><!-- End activity item-->
 
-                <div class="activity-item d-flex">
+                <!--<div class="activity-item d-flex">
                   <div class="activite-label">56 min</div>
                   <i class='bi bi-circle-fill activity-badge text-danger align-self-start'></i>
                   <div class="activity-content">
                     Voluptatem blanditiis blanditiis eveniet
                   </div>
-                </div><!-- End activity item-->
+                </div>--><!-- End activity item-->
 
-                <div class="activity-item d-flex">
+                <!--<div class="activity-item d-flex">
                   <div class="activite-label">2 hrs</div>
                   <i class='bi bi-circle-fill activity-badge text-primary align-self-start'></i>
                   <div class="activity-content">
                     Voluptates corrupti molestias voluptatem
                   </div>
-                </div><!-- End activity item-->
+                </div>--><!-- End activity item-->
 
-                <div class="activity-item d-flex">
+                <!--<div class="activity-item d-flex">
                   <div class="activite-label">1 day</div>
                   <i class='bi bi-circle-fill activity-badge text-info align-self-start'></i>
                   <div class="activity-content">
                     Tempore autem saepe <a href="#" class="fw-bold text-dark">occaecati voluptatem</a> tempore
                   </div>
-                </div><!-- End activity item-->
+                </div>--><!-- End activity item-->
 
-                <div class="activity-item d-flex">
+                <!--<div class="activity-item d-flex">
                   <div class="activite-label">2 days</div>
                   <i class='bi bi-circle-fill activity-badge text-warning align-self-start'></i>
                   <div class="activity-content">
                     Est sit eum reiciendis exercitationem
                   </div>
-                </div><!-- End activity item-->
+                </div>--><!-- End activity item-->
 
-                <div class="activity-item d-flex">
+                <!--<div class="activity-item d-flex">
                   <div class="activite-label">4 weeks</div>
                   <i class='bi bi-circle-fill activity-badge text-muted align-self-start'></i>
                   <div class="activity-content">
                     Dicta dolorem harum nulla eius. Ut quidem quidem sit quas
                   </div>
-                </div><!-- End activity item-->
+                </div>
 
               </div>
 
             </div>
-          </div><!-- End Recent Activity -->
+          </div>-->
 
           <!-- Budget Report -->
-          <div class="card">
+          <!--<div class="card">
             <div class="filter">
               <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
               <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
@@ -1103,9 +1137,9 @@
               </script>
 
             </div>
-          </div><!-- End Budget Report -->
+          </div>
 
-          <!-- Website Traffic -->
+          
           <div class="card">
             <div class="filter">
               <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
@@ -1181,9 +1215,9 @@
               </script>
 
             </div>
-          </div><!-- End Website Traffic -->
+          </div>
 
-          <!-- News & Updates Traffic -->
+          
           <div class="card">
             <div class="filter">
               <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
@@ -1232,10 +1266,10 @@
                   <p>Odit ut eveniet modi reiciendis. Atque cupiditate libero beatae dignissimos eius...</p>
                 </div>
 
-              </div><!-- End sidebar recent posts-->
+              </div>
 
             </div>
-          </div><!-- End News & Updates -->
+          </div>-->
         </div>
         </div><!-- End center side columns -->
 
