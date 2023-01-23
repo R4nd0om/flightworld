@@ -43,6 +43,7 @@
   <button class="btn text-white toggle-app-side" data-bs-toggle="collapse" data-bs-target=".app__sidebar" aria-expanded="true">
     <img src="assets\img\filter.svg" style="height: 19px; margin-right: 7px;">Фильтры</button>
     <!--adding js files-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="av/jquery.js?z=12"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-dateFormat/1.0/jquery.dateFormat.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/js/bootstrap-datepicker.min.js"></script>
@@ -646,13 +647,392 @@
           <div class="row">
 
             <div class="card perelet">
+              <div class="caret --is-clickable" tabindex="1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#fff" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+                </svg>
+              </div>
               <div class="leftCard">
                 <h1 class="LC pricer">2 491 SM</h1>
-                <button class="select-fly btn LC">Выбрать билет</button>
                 <p class="cours LC">14203 руб по курсу 0.145</p>
+                <button class="select-fly btn LC">Выбрать билет</button>
                 <p class="count LC">Осталось 5 билетов по этой цене</p>
               </div>
+              <div class="ticket-desktop__content">
+                <div class="ticket-desktop__header">
+                  <div class="ticket-desktop__carriers">
+                    <ul class="ticket-carrier-list">
+                      <li class="ticket-carrier-list__item">
+                        <div class="ticket-carrier" data-test-id="tooltip-wrapper">
+                          <div class="carrierLogo_90068ec medium_90068ec">
+                            <img alt="S7 Airlines" src="//mpics.avs.io/al_square/64/64/S7.png">
+                          </div>
+                        </div>
+                      </li>
+                      <div class="XEyw2UjHS9wo6WMST5nU">
+                        <div class="body-2-semi_03dd9f9 mobile-body-2-semi_03dd9f9 single-line_03dd9f9 DR6WEw4xxkzQ3Cq9hrQw" data-test-id="text" style="color: #000;">S7 Airlines
+                        </div>
+                      </div>
+                    </ul>
+                  </div>
+                  <div class="ticket-desktop__tags-wrap">
+                    <div class="ticket-desktop__tags">
+                      <ul class="ticket-tag-list">
+                        <li class="ticket-tag-list__item">
+                          <div class="ticket-tag --icon" data-bs-toggle="tooltip" title="Есть возврат">
+                            <svg width="13.019" height="9.34" viewBox="0 0 13.019 9.34"><path id="\u041A\u043E\u043D\u0442\u0443\u0440_8416" data-name="\u041A\u043E\u043D\u0442\u0443\u0440 8416" d="M401.679-715.93v-1.145h.972a3.331,3.331,0,0,0,3.34-2.827,3.258,3.258,0,0,0-3.227-3.683.542.542,0,0,0-.542.543.543.543,0,0,0,.5.541,2.259,2.259,0,0,1,1.994,1.189,2.187,2.187,0,0,1-1.952,3.153h-1.085v-1.146a.269.269,0,0,0-.41-.229l-2.744,1.686a.268.268,0,0,0,0,.457c.664.41,2.054,1.266,2.746,1.692a.269.269,0,0,0,.41-.23m-4.34-5.424V-722.5h-.988a2.235,2.235,0,0,0-2.256,1.953,2.172,2.172,0,0,0,2.159,2.387.542.542,0,0,1,.542.543.543.543,0,0,1-.542.542,3.259,3.259,0,0,1-3.227-3.683,3.331,3.331,0,0,1,3.34-2.826h.972v-1.146a.269.269,0,0,1,.41-.229l2.744,1.685a.269.269,0,0,1,0,.458c-.664.41-2.054,1.266-2.746,1.692a.269.269,0,0,1-.41-.23" transform="translate(-393 725)" fill="#0C73FE" fill-rule="evenodd"></path></svg>                        </li>
+                        <li class="ticket-tag-list__item">
+                          <div class="ticket-tag --icon" data-bs-toggle="tooltip" title="Есть обмен">
+                            <svg width="10.73" height="9.589" viewBox="0 0 10.73 9.589"><path id="\u041A\u043E\u043D\u0442\u0443\u0440_8413" data-name="\u041A\u043E\u043D\u0442\u0443\u0440 8413" d="M211.006-3267.888h-.939a4.55,4.55,0,0,0-4.523-4.112,4.55,4.55,0,0,0-4.545,4.544,4.55,4.55,0,0,0,4.545,4.545,4.558,4.558,0,0,0,2.856-1.009.434.434,0,0,0,.064-.609.434.434,0,0,0-.609-.064,3.635,3.635,0,0,1-2.311.817,3.683,3.683,0,0,1-3.679-3.679,3.683,3.683,0,0,1,3.679-3.679,3.683,3.683,0,0,1,3.651,3.247h-.871a.218.218,0,0,0-.186.333l1.34,2.178a.219.219,0,0,0,.372,0l1.34-2.178a.218.218,0,0,0-.186-.333" transform="translate(-200.75 3272.25)" fill="#0C73FE" stroke="#0C73FE" stroke-width="0.5" fill-rule="evenodd"></path></svg></li>
+                        <li class="ticket-tag-list__item">
+                          <div class="ticket-tag --icon" data-bs-toggle="tooltip" title="Есть багаж">
+                            <svg width="8.428" height="11.836" viewBox="0 0 8.428 11.836"><g id="\u0421\u0433\u0440\u0443\u043F\u043F\u0438\u0440\u043E\u0432\u0430\u0442\u044C_1046" data-name="\u0421\u0433\u0440\u0443\u043F\u043F\u0438\u0440\u043E\u0432\u0430\u0442\u044C 1046" transform="translate(0 0.5)"><path id="\u041A\u043E\u043D\u0442\u0443\u0440_8335" data-name="\u041A\u043E\u043D\u0442\u0443\u0440 8335" d="M1.2,0h6.02a1.2,1.2,0,0,1,1.2,1.2V7.826a1.2,1.2,0,0,1-1.2,1.2H1.2A1.2,1.2,0,0,1,0,7.826V1.2A1.2,1.2,0,0,1,1.2,0Z" transform="translate(0 1.355)" fill="#0C73FE"></path><line id="\u041B\u0438\u043D\u0438\u044F_124" data-name="\u041B\u0438\u043D\u0438\u044F 124" y2="1.806" transform="translate(2.709 0)" fill="#0C73FE" stroke="#0C73FE" stroke-linecap="round" stroke-width="1"></line><line id="\u041B\u0438\u043D\u0438\u044F_125" data-name="\u041B\u0438\u043D\u0438\u044F 125" y2="1.806" transform="translate(5.719 0)" fill="#0C73FE" stroke="#0C73FE" stroke-linecap="round" stroke-width="1"></line><line id="\u041B\u0438\u043D\u0438\u044F_126" data-name="\u041B\u0438\u043D\u0438\u044F 126" x2="3.913" transform="translate(2.258 0)" fill="#0C73FE" stroke="#0C73FE" stroke-linecap="round" stroke-width="1"></line><line id="\u041B\u0438\u043D\u0438\u044F_127" data-name="\u041B\u0438\u043D\u0438\u044F 127" y1="1.204" transform="translate(1.806 9.632)" fill="#0C73FE" stroke="#0C73FE" stroke-linecap="round" stroke-width="1"></line><line id="\u041B\u0438\u043D\u0438\u044F_128" data-name="\u041B\u0438\u043D\u0438\u044F 128" y1="1.204" transform="translate(6.622 9.632)" fill="#0C73FE" stroke="#0C73FE" stroke-linecap="round" stroke-width="1"></line></g></svg>                          </div>
+                        </li>
+                        <li class="ticket-tag-list__item">
+                          <div class="ticket-tag --icon" data-bs-toggle="tooltip" title="Есть ручная кладь">
+                            <svg id="\u0421\u0433\u0440\u0443\u043F\u043F\u0438\u0440\u043E\u0432\u0430\u0442\u044C_1047" data-name="\u0421\u0433\u0440\u0443\u043F\u043F\u0438\u0440\u043E\u0432\u0430\u0442\u044C 1047" width="8.261" height="9.586" viewBox="0 0 8.261 9.586"><path id="\u041A\u043E\u043D\u0442\u0443\u0440_8336" data-name="\u041A\u043E\u043D\u0442\u0443\u0440 8336" d="M1.18,0h5.9a1.192,1.192,0,0,1,1.18,1.2V6.321a1.192,1.192,0,0,1-1.18,1.2H1.18A1.192,1.192,0,0,1,0,6.321V1.2A1.192,1.192,0,0,1,1.18,0Z" transform="translate(0 2.061)" fill="#0C73FE"></path><g id="\u042D\u043B\u043B\u0438\u043F\u0441_106" data-name="\u042D\u043B\u043B\u0438\u043F\u0441 106" transform="translate(1.515)" fill="none" stroke="#0C73FE" stroke-width="1"><ellipse cx="2.588" cy="2.588" rx="2.588" ry="2.588" stroke="none"></ellipse><ellipse cx="2.588" cy="2.588" rx="2.088" ry="2.088" fill="none"></ellipse></g></svg>                            </svg>
+                          </div>
+                        </li>
+                        <li class="ticket-tag-list__item">
+                          <div class="ticket-tag --icon --warning" data-bs-toggle="tooltip" title="Долгая пересадка">
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" data-test-id="icon" class="icon_0ce8f7f icon_b0a8dbc color-red_b0a8dbc" aria-hidden="true"><path clip-rule="evenodd" d="M8 6v3.9h.007L8 9.906l2.667 2.594L8 15.1l.007.007H8V19h8v-3.893h-.007L16 15.1l-2.667-2.6L16 9.906l-.007-.006H16V6H8zm7.013 9.667V18H9v-2.333L12.007 13l3.006 2.667zM15 7H9v1h6V7z"></path>
+                            </svg>
+                          </div>
+                        </li>
+                        <li class="ticket-tag-list__item">
+                          <div class="ticket-tag --icon --warning" data-bs-toggle="tooltip" title="Ночная пересадка">
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" data-test-id="icon" class="icon_0ce8f7f icon_b0a8dbc color-red_b0a8dbc" aria-hidden="true"><path clip-rule="evenodd" d="M18.214 15.014c-.422.091-.86.139-1.31.139-3.364 0-6.09-2.687-6.09-6.002 0-1.099.3-2.13.824-3.016-2.734.591-4.78 2.991-4.78 5.863 0 3.315 2.727 6.002 6.09 6.002 2.248 0 4.211-1.2 5.267-2.986z"></path>
+                            </svg>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="ticket-desktop__subs">
+                    <div class="ticket-subscriptions" data-bs-toggle="tooltip" title="Подписаться на уведомления об изменениях цены этого билета">
+                      <button class="ticket-subscriptions__button">
+                        <span class="ticket-subscriptions__icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 20C14 21.1 13.1 22 12 22C11.4696 22 10.9609 21.7893 10.5858 21.4142C10.2107 21.0391 10 20.5304 10 20H14Z" fill="#A0B0B9"></path><path d="M18.6354 18H5.36367L6.15243 17.1876C6.69598 16.6277 7 15.8781 7 15.0978V10.758C7 7.91096 8.43312 5.77943 10.737 5.21752L11.5 5.03141V4.246V3.545C11.5 3.21426 11.7499 3 12 3C12.2501 3 12.5 3.21426 12.5 3.545V4.245V5.0295L13.2619 5.21625C15.5576 5.77893 17 7.92209 17 10.757V15.0988C17 15.8791 17.304 16.6287 17.8476 17.1886L18.6354 18Z" stroke="#A0B0B9" stroke-width="2"></path>
+                          </svg>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="ticket-desktop__share">
+                    <div class="ticket-sharing-desktop">
+                      <button type="button" class="ticket-sharing-desktop__open-button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" data-test-id="icon" class="icon_0ce8f7f ticket-sharing-desktop__share-icon" aria-hidden="true"><path d="M11.375 1.272L8.277 4.57c-.37.363-.37 1.028 0 1.391.142.152.37.242.597.212.227 0 .455-.09.625-.272L11 4.176v9.886c0 .482.5.938 1 .938s1-.41 1-.938V4.176l1.473 1.754a.886.886 0 001.25.03c.37-.363.37-.998 0-1.391l-3.098-3.297a.854.854 0 00-1.25 0z"></path><path d="M9 8v2H7a1 1 0 00-1 1v8a1 1 0 001 1h10a1 1 0 001-1v-8a1 1 0 00-1-1h-2V9 8h2a3 3 0 013 3v8a3 3 0 01-3 3H7a3 3 0 01-3-3v-8a3 3 0 013-3h2z"></path>
+                        </svg>
+                      </button>
+                      <button type="button" class="ticket-sharing-desktop__close-button">
+                        <span class="ticket-sharing-desktop__close-icon">
+                          <svg width="10" height="10" viewBox="0 0 10 10" fill="#A0B0B9" xmlns="http://www.w3.org/2000/svg"> <path d="M9.66665 1.27325L8.72665 0.333252L4.99998 4.05992L1.27331 0.333252L0.333313 1.27325L4.05998 4.99992L0.333313 8.72659L1.27331 9.66659L4.99998 5.93992L8.72665 9.66659L9.66665 8.72659L5.93998 4.99992L9.66665 1.27325Z"></path></svg>
+                        </span>
+                      </button>
+                      <div class="ticket-sharing-desktop__bar">
+                        <div class="ticket-sharing-desktop__bar-content">
+                          <div class="ticket-sharing-desktop__list">
+                            <div class="ticket-sharing-desktop__list-item" data-test-id="tooltip-wrapper">
+                              <div class="socialButton_e8962cf whatsapp_e8962cf small_e8962cf" data-test-id="social-button">
+                                <button title="Поделиться в Whatsapp" class="button_278c41a inline_278c41a button_e8962cf ticket-sharing-desktop__share-btn" type="button" data-test-id="button">
+                                  <span class="text_278c41a">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" data-test-id="icon" class="icon_0ce8f7f icon_e8962cf" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.913 18.9l-.301-.15-3.01.75.803-2.95-.2-.3C4.451 15 4 13.55 4 12.05 3.95 7.6 7.56 4 11.975 4a7.98 7.98 0 015.668 2.35A8.017 8.017 0 0120 12c0 4.4-3.611 8-8.025 8a7.879 7.879 0 01-4.062-1.1zm7.974-5.05l.552.25c.1.05.15.1.15.1v.35c-.05.25-.1.5-.2.7-.05.1-.15.2-.251.3-.05.05-.1.087-.15.125-.05.037-.1.075-.15.125l-.101.1c-.057.056-.113.08-.178.11-.051.021-.107.046-.173.09-.2.1-.502.2-.753.2h-.501c-.075-.025-.163-.038-.251-.05-.088-.012-.175-.025-.25-.05a8.971 8.971 0 01-3.612-1.9c-.065-.098-.152-.175-.247-.258-.05-.044-.102-.09-.154-.142l-.2-.2a8.33 8.33 0 01-1.857-2.55l-.05-.15c-.15-.35-.25-.75-.25-1.15 0-.55.2-1.1.551-1.55.05-.05.088-.1.126-.15.037-.05.075-.1.125-.15.05-.025.1-.062.15-.1.05-.037.1-.075.151-.1l.05-.05c.05 0 .1-.012.15-.025.05-.012.1-.025.151-.025h.552c.15.05.25.1.35.25.151.3.753 1.65.803 1.9.05.15 0 .35-.1.5a.889.889 0 00-.125.175c-.038.063-.076.125-.126.175-.15.15-.35.4-.35.4-.051.05-.051.15-.051.25.02.038.031.07.041.095a.263.263 0 00.06.105l.05.1c.25.45.601.85.952 1.2.05.05.113.1.176.15.063.05.125.1.176.15.4.4.902.7 1.454.95l.25.1c.05.05.151.1.201.1h.05c.1 0 .201-.05.251-.15.702-.8.753-.85.753-.85.1-.05.2-.1.35-.1.026 0 .05.013.076.025.025.013.05.025.075.025.502.25 1.304.6 1.304.6z"></path>
+                                    </svg>
+                                  </span>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="ticket-sharing-desktop__list-item" data-test-id="tooltip-wrapper">
+                              <div class="socialButton_e8962cf vkontakte_e8962cf small_e8962cf" data-test-id="social-button">
+                                <button title="Поделиться в Вконтакте" class="button_278c41a inline_278c41a button_e8962cf ticket-sharing-desktop__share-btn" type="button" data-test-id="button">
+                                  <span class="text_278c41a">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" data-test-id="icon" class="icon_0ce8f7f icon_e8962cf" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.763 3H9.237C4.194 3 3 4.194 3 9.237v5.526C3 19.806 4.194 21 9.237 21h5.526C19.806 21 21 19.806 21 14.763V9.237C21 4.194 19.793 3 14.763 3zm2.77 12.843h-1.31c-.495 0-.647-.394-1.536-1.296-.775-.75-1.118-.851-1.309-.851-.267 0-.343.076-.343.444v1.182c0 .317-.101.508-.94.508-1.384 0-2.921-.838-4.001-2.4-1.626-2.287-2.07-4.002-2.07-4.358 0-.19.076-.368.444-.368h1.308c.33 0 .458.152.585.508.647 1.867 1.727 3.506 2.172 3.506.165 0 .241-.076.241-.496v-1.93c-.05-.89-.52-.966-.52-1.284 0-.152.126-.304.33-.304h2.058c.279 0 .38.152.38.482v2.604c0 .28.128.382.204.382.165 0 .305-.102.61-.407.94-1.054 1.613-2.68 1.613-2.68.089-.19.241-.369.571-.369h1.309c.394 0 .483.204.394.483-.165.762-1.766 3.023-1.766 3.023-.14.229-.19.33 0 .585.14.19.597.584.902.94.559.635.99 1.168 1.105 1.537.127.368-.063.559-.432.559z"></path>
+                                    </svg>
+                                  </span>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="ticket-sharing-desktop__list-item" data-test-id="tooltip-wrapper">
+                              <div class="socialButton_e8962cf twitter_e8962cf small_e8962cf" data-test-id="social-button">
+                                <button title="Поделиться в Твиттере" class="button_278c41a inline_278c41a button_e8962cf ticket-sharing-desktop__share-btn" type="button" data-test-id="button">
+                                  <span class="text_278c41a">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" data-test-id="icon" class="icon_0ce8f7f icon_e8962cf" aria-hidden="true"><path d="M11.74 8.724l.039.606-.65-.074C8.762 8.97 6.694 8.007 4.938 6.389l-.858-.804-.222.593c-.468 1.323-.169 2.72.807 3.658.52.52.403.594-.494.285-.313-.1-.586-.173-.612-.136-.09.086.221 1.21.468 1.656.339.618 1.028 1.223 1.782 1.582l.638.284-.755.012c-.728 0-.754.012-.676.272.26.803 1.288 1.656 2.432 2.027l.806.26-.702.395a7.673 7.673 0 01-3.486.914C3.481 17.4 3 17.45 3 17.486c0 .124 1.587.816 2.51 1.087 2.77.804 6.06.458 8.532-.914 1.756-.976 3.512-2.916 4.331-4.795.442-1 .884-2.83.884-3.707 0-.569.04-.643.768-1.323.429-.395.832-.828.91-.951.13-.235.117-.235-.546-.025-1.105.37-1.262.321-.715-.235.403-.395.884-1.112.884-1.322 0-.037-.195.025-.416.136-.234.124-.754.309-1.145.42l-.702.21-.637-.408c-.351-.222-.846-.47-1.106-.543-.663-.173-1.678-.149-2.276.05-1.626.555-2.653 1.989-2.536 3.558z"></path>
+                                    </svg>
+                                  </span>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="ticket-sharing-desktop__list-item" data-test-id="tooltip-wrapper">
+                              <div class="socialButton_e8962cf telegram_e8962cf small_e8962cf" data-test-id="social-button">
+                                <button title="Поделиться в Телеграме" class="button_278c41a inline_278c41a button_e8962cf ticket-sharing-desktop__share-btn" type="button" data-test-id="button">
+                                  <span class="text_278c41a">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" data-test-id="icon" class="icon_0ce8f7f icon_e8962cf" aria-hidden="true"><path d="M19 5.496l-2.53 12.92s-.355.897-1.328.467l-3.627-2.816.026.021-2.31 2.133s-.18.139-.378.052l.467-4.031s6.477-5.897 6.742-6.148c.266-.25.177-.304.177-.304.018-.305-.478 0-.478 0L7.18 13.31l-3.574-1.218s-.548-.198-.602-.628c-.054-.43.62-.663.62-.663l14.208-5.646S19 4.636 19 5.496z"></path>
+                                    </svg>
+                                  </span>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="ticket-sharing-desktop__list-item">
+                              <div class="" data-test-id="tooltip-wrapper">
+                                <div class="root_4a9c15c small_4a9c15c" data-test-id="copy-link">
+                                  <button title="Скопировать ссылку" class="button_278c41a inline_278c41a button_4a9c15c copyLink_4a9c15c ticket-sharing-desktop__share-btn" type="button" data-test-id="button">
+                                    <span class="text_278c41a">
+                                      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" data-test-id="icon" class="icon_0ce8f7f icon_4a9c15c" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.508 5.51l-.056-.057c-1.483-1.451-3.835-1.532-5.22-.18L10.02 8.409a3.24 3.24 0 00-.754 1.14c-.17.431-.248.899-.232 1.374.017.475.128.95.328 1.394.2.445.484.851.836 1.195l.056.057c.134.13.247.222.398.335l1.171-1.143a2.384 2.384 0 01-.414-.32l-.058-.055c-.798-.782-.841-2.023-.096-2.768l3.213-3.137c.745-.728 2.014-.684 2.83.099l.057.056c.797.781.841 2.022.096 2.767l-1.456 1.421c.28.636.428 1.313.437 1.99l2.254-2.201a3.21 3.21 0 00.764-1.137c.172-.432.252-.9.236-1.377a3.69 3.69 0 00-.332-1.397 3.892 3.892 0 00-.846-1.193zm-5.156 4.58l-1.172 1.143c.15.095.282.19.415.32l.057.056c.8.781.843 2.021.096 2.768l-3.216 3.136c-.747.728-2.016.684-2.834-.099l-.056-.056c-.8-.78-.843-2.02-.097-2.767l1.458-1.42a5.098 5.098 0 01-.437-1.992l-2.259 2.203c-.329.32-.585.707-.755 1.14-.17.431-.248.898-.231 1.374.016.476.128.95.328 1.394.2.445.485.85.837 1.195l.056.056c1.485 1.45 3.84 1.533 5.226.181l3.217-3.136c.329-.32.586-.708.756-1.14.17-.431.248-.899.232-1.375a3.716 3.716 0 00-.329-1.394c-.2-.445-.485-.85-.837-1.195l-.056-.056a3.678 3.678 0 00-.398-.337z"></path>
+                                      </svg>
+                                    </span>
+                                  </button>
+                                  <div class="wrapper_8d9dab7 isHidden_4a9c15c" data-test-id="input">
+                                    <input type="url" readonly="" placeholder="" class="input_8d9dab7 custom_8d9dab7 inputInner_4a9c15c small_4a9c15c" value="https://www.aviasales.ru/search/MOW2801DXB31011?expected_price=31867&amp;expected_price_currency=rub&amp;expected_price_source=share&amp;expected_price_uuid=f7185eea-8575-4581-93f5-db247f73cfbc&amp;marker=yandex&amp;search_date=22012023&amp;search_label=&amp;t=FZ16748901001674913200000325VKODXB16751286001675145700000345DXBVKO_31280b61cf4583b0355a9f198c4cc9f2_31867&amp;utm_source=ticket_sharing">
+                                    <span class="leftElement_8d9dab7 hidden_8d9dab7"></span>
+                                    <span class="rightElement_8d9dab7 hidden_8d9dab7"></span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ticket-desktop__body">
+                  <div class="ticket-desktop__segments-wrap">
+                    <div class="ticket-desktop__segment">
+                      <div class="ticket-segment">
+                        <div class="ticket-segment__route">
+                          <div class="segment-route" data-test-id="ticket-segment-route">
+                            <div class="segment-route__body">
+                              <div class="segment-route__endpoint origin" data-test-id="origin-endpoint">
+                                <div class="title-2-regular_03dd9f9 mobile-title-2-regular_03dd9f9 segment-route__time" data-test-id="time">16:20</div>
+                                <div class="segment-route__city" data-test-id="city">Худжанд</div>
+                                <div class="segment-route__date" data-test-id="date">23 дек, пт</div>
+                              </div>
+                              <div class="segment-route__route_wrap">
+                                <div class="segment-route__duration">В пути:  18ч 55м</div>
+                                <div class="segment-route__path">
+                                  <div class="segment-route__path-endpoint --departure --plane" data-bs-toggle="tooltip" title='Вылет из аэропорта "Аэропорт" (Худжанд) в 16:20 местному времени'>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" data-test-id="icon" class="icon_0ce8f7f segment-route__path-endpoint-icon" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.954 9.793l-2.719 1.268c-2-.64-4.862-1.236-7.398-2.056l-1.201.55c1.32 1.029 3.135 2.33 4.52 3.408L7.439 14.23c-1.173-.248-2.418-.338-3.349-.532-.506-.106-.816.339-.338.71 2.256 1.759 3.159 2.469 3.159 2.469.392.305.875.497 1.343.283l12.445-5.803c.906-.46.871-1.106.64-1.629-.547-1.173-2.049-1.003-4.384.064z"></path>
+                                    </svg>
+                                    <span class="segment-route__path-endpoint-iata">LBD</span>
+                                  </div>
+                                  <div class="segment-route__connector --pinable" data-bs-toggle="tooltip" title='В пути: 18ч:55м' style="flex-grow: 325;"></div>
+                                  <div class="segment-route__path-endpoint --arrival --plane" data-bs-toggle="tooltip" title='Прилёт в аэропорт "Москва" в 09:15 местному времени'>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" data-test-id="icon" class="icon_0ce8f7f segment-route__path-endpoint-icon" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.109 14.02l-2.719-1.268c-.795-1.945-2.178-4.52-3.18-6.99l-1.193-.567c.06 1.674.23 3.9.295 5.655l-2.72-1.268c-.564-1.058-1.295-2.069-1.744-2.907-.245-.456-.785-.408-.762.198.103 2.858.14 4.006.14 4.006.018.497.182.99.646 1.21l12.445 5.804c.935.398 1.407-.043 1.659-.557.547-1.173-.549-2.214-2.867-3.317z"></path>
+                                    </svg>
+                                    <span class="segment-route__path-endpoint-iata">DME</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="segment-route__endpoint destination" data-test-id="destination-endpoint">
+                                <div class="title-2-regular_03dd9f9 mobile-title-2-regular_03dd9f9 segment-route__time" data-test-id="time">09:15</div>
+                                <div class="segment-route__city" data-test-id="city">Москва</div>
+                                <div class="segment-route__date" data-test-id="date">24 дек, сб</div>
+                              </div>
+                            </div>
+                            <div class="moreCard hidden">
+                              <div class="plane planeIcon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.954 9.793l-2.719 1.268c-2-.64-4.862-1.236-7.398-2.056l-1.201.55c1.32 1.029 3.135 2.33 4.52 3.408L7.439 14.23c-1.173-.248-2.418-.338-3.349-.532-.506-.106-.816.339-.338.71 2.256 1.759 3.159 2.469 3.159 2.469.392.305.875.497 1.343.283l12.445-5.803c.906-.46.871-1.106.64-1.629-.547-1.173-2.049-1.003-4.384.064z"></path>
+                                </svg>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.109 14.02l-2.719-1.268c-.795-1.945-2.178-4.52-3.18-6.99l-1.193-.567c.06 1.674.23 3.9.295 5.655l-2.72-1.268c-.564-1.058-1.295-2.069-1.744-2.907-.245-.456-.785-.408-.762.198.103 2.858.14 4.006.14 4.006.018.497.182.99.646 1.21l12.445 5.804c.935.398 1.407-.043 1.659-.557.547-1.173-.549-2.214-2.867-3.317z"></path>
+                                </svg>
+                              </div>
+                              <div class="plane planeTime">
+                                <span>16:20</span>
+                                <span>09:15</span>
+                              </div>
+                              <div class="plane planeCity">
+                                <span>Худжанд</span>
+                                <span>Москва</span>
+                              </div>
+                              <div class="plane planeDate">
+                                <span>23/12/22</span>
+                                <span>24/12/22</span>
+                              </div>
+                              <div class="plane planeDuration">18 ч 55 м</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="ticket-desktop__segment">
+                      <div class="ticket-segment">
+                        <div class="ticket-segment__route">
+                          <div class="segment-route" data-test-id="ticket-segment-route">
+                            <div class="segment-route__body">
+                              <div class="segment-route__endpoint origin" data-test-id="origin-endpoint">
+                                <div class="title-2-regular_03dd9f9 mobile-title-2-regular_03dd9f9 segment-route__time" data-test-id="time">16:20</div>
+                                <div class="segment-route__city" data-test-id="city">Худжанд</div>
+                                <div class="segment-route__date" data-test-id="date">23 дек, пт</div>
+                              </div>
+                              <div class="segment-route__route_wrap">
+                                <div class="segment-route__duration">В пути:  18ч 55м</div>
+                                <div class="segment-route__path">
+                                  <div class="segment-route__path-endpoint --departure --plane" data-bs-toggle="tooltip" title='Вылет из аэропорта "Аэропорт" (Худжанд) в 16:20 местному времени'>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" data-test-id="icon" class="icon_0ce8f7f segment-route__path-endpoint-icon" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.954 9.793l-2.719 1.268c-2-.64-4.862-1.236-7.398-2.056l-1.201.55c1.32 1.029 3.135 2.33 4.52 3.408L7.439 14.23c-1.173-.248-2.418-.338-3.349-.532-.506-.106-.816.339-.338.71 2.256 1.759 3.159 2.469 3.159 2.469.392.305.875.497 1.343.283l12.445-5.803c.906-.46.871-1.106.64-1.629-.547-1.173-2.049-1.003-4.384.064z"></path>
+                                    </svg>
+                                    <span class="segment-route__path-endpoint-iata">LBD</span>
+                                  </div>
+                                  <div class="segment-route__connector --pinable" data-bs-toggle="tooltip" title='В пути: 18ч:55м' style="flex-grow: 325;"></div>
+                                  <div class="segment-route__path-endpoint --arrival --plane" data-bs-toggle="tooltip" title='Прилёт в аэропорт "Москва" в 09:15 местному времени'>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" data-test-id="icon" class="icon_0ce8f7f segment-route__path-endpoint-icon" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.109 14.02l-2.719-1.268c-.795-1.945-2.178-4.52-3.18-6.99l-1.193-.567c.06 1.674.23 3.9.295 5.655l-2.72-1.268c-.564-1.058-1.295-2.069-1.744-2.907-.245-.456-.785-.408-.762.198.103 2.858.14 4.006.14 4.006.018.497.182.99.646 1.21l12.445 5.804c.935.398 1.407-.043 1.659-.557.547-1.173-.549-2.214-2.867-3.317z"></path>
+                                    </svg>
+                                    <span class="segment-route__path-endpoint-iata">DME</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="segment-route__endpoint destination" data-test-id="destination-endpoint">
+                                <div class="title-2-regular_03dd9f9 mobile-title-2-regular_03dd9f9 segment-route__time" data-test-id="time">09:15</div>
+                                <div class="segment-route__city" data-test-id="city">Москва</div>
+                                <div class="segment-route__date" data-test-id="date">24 дек, сб</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+            <div class="card perelet">
+              <div class="leftCard">
+                <h1 class="LC pricer">2 491 SM</h1>
+                <p class="cours LC">14203 руб по курсу 0.145</p>
+                <button class="select-fly btn LC">Выбрать билет</button>
+                <p class="count LC">Осталось 5 билетов по этой цене</p>
+              </div>
+              <div class="ticket-desktop__content">
+                <div class="ticket-desktop__header">
+                  <div class="ticket-desktop__carriers"><ul class="ticket-carrier-list"><li class="ticket-carrier-list__item"><div class="ticket-carrier --rounded" data-test-id="tooltip-wrapper"><div class="carrierLogo_90068ec medium_90068ec"><img alt="Smartavia" src="//mpics.avs.io/al_square/64/64/5N.png"></div></div></li><li class="ticket-carrier-list__item"><div class="ticket-carrier --rounded" data-test-id="tooltip-wrapper"><div class="carrierLogo_90068ec medium_90068ec"><img alt="Уральские авиалинии" src="//mpics.avs.io/al_square/64/64/U6.png"></div></div></li></ul></div>
+                  <div class="ticket-desktop__tags-wrap">
+                    <div class="ticket-desktop__tags">
+                      <ul class="ticket-tag-list">
+                        <li class="ticket-tag-list__item">
+                          <div class="ticket-tag --icon" data-bs-toggle="tooltip" title="Есть возврат">
+                            <svg width="13.019" height="9.34" viewBox="0 0 13.019 9.34"><path id="\u041A\u043E\u043D\u0442\u0443\u0440_8416" data-name="\u041A\u043E\u043D\u0442\u0443\u0440 8416" d="M401.679-715.93v-1.145h.972a3.331,3.331,0,0,0,3.34-2.827,3.258,3.258,0,0,0-3.227-3.683.542.542,0,0,0-.542.543.543.543,0,0,0,.5.541,2.259,2.259,0,0,1,1.994,1.189,2.187,2.187,0,0,1-1.952,3.153h-1.085v-1.146a.269.269,0,0,0-.41-.229l-2.744,1.686a.268.268,0,0,0,0,.457c.664.41,2.054,1.266,2.746,1.692a.269.269,0,0,0,.41-.23m-4.34-5.424V-722.5h-.988a2.235,2.235,0,0,0-2.256,1.953,2.172,2.172,0,0,0,2.159,2.387.542.542,0,0,1,.542.543.543.543,0,0,1-.542.542,3.259,3.259,0,0,1-3.227-3.683,3.331,3.331,0,0,1,3.34-2.826h.972v-1.146a.269.269,0,0,1,.41-.229l2.744,1.685a.269.269,0,0,1,0,.458c-.664.41-2.054,1.266-2.746,1.692a.269.269,0,0,1-.41-.23" transform="translate(-393 725)" fill="#0C73FE" fill-rule="evenodd"></path></svg>                        </li>
+                        <li class="ticket-tag-list__item">
+                          <div class="ticket-tag --icon" data-bs-toggle="tooltip" title="Есть обмен">
+                            <svg width="10.73" height="9.589" viewBox="0 0 10.73 9.589"><path id="\u041A\u043E\u043D\u0442\u0443\u0440_8413" data-name="\u041A\u043E\u043D\u0442\u0443\u0440 8413" d="M211.006-3267.888h-.939a4.55,4.55,0,0,0-4.523-4.112,4.55,4.55,0,0,0-4.545,4.544,4.55,4.55,0,0,0,4.545,4.545,4.558,4.558,0,0,0,2.856-1.009.434.434,0,0,0,.064-.609.434.434,0,0,0-.609-.064,3.635,3.635,0,0,1-2.311.817,3.683,3.683,0,0,1-3.679-3.679,3.683,3.683,0,0,1,3.679-3.679,3.683,3.683,0,0,1,3.651,3.247h-.871a.218.218,0,0,0-.186.333l1.34,2.178a.219.219,0,0,0,.372,0l1.34-2.178a.218.218,0,0,0-.186-.333" transform="translate(-200.75 3272.25)" fill="#0C73FE" stroke="#0C73FE" stroke-width="0.5" fill-rule="evenodd"></path></svg></li>
+                        <li class="ticket-tag-list__item">
+                          <div class="ticket-tag --icon" data-bs-toggle="tooltip" title="Есть багаж">
+                            <svg width="8.428" height="11.836" viewBox="0 0 8.428 11.836"><g id="\u0421\u0433\u0440\u0443\u043F\u043F\u0438\u0440\u043E\u0432\u0430\u0442\u044C_1046" data-name="\u0421\u0433\u0440\u0443\u043F\u043F\u0438\u0440\u043E\u0432\u0430\u0442\u044C 1046" transform="translate(0 0.5)"><path id="\u041A\u043E\u043D\u0442\u0443\u0440_8335" data-name="\u041A\u043E\u043D\u0442\u0443\u0440 8335" d="M1.2,0h6.02a1.2,1.2,0,0,1,1.2,1.2V7.826a1.2,1.2,0,0,1-1.2,1.2H1.2A1.2,1.2,0,0,1,0,7.826V1.2A1.2,1.2,0,0,1,1.2,0Z" transform="translate(0 1.355)" fill="#0C73FE"></path><line id="\u041B\u0438\u043D\u0438\u044F_124" data-name="\u041B\u0438\u043D\u0438\u044F 124" y2="1.806" transform="translate(2.709 0)" fill="#0C73FE" stroke="#0C73FE" stroke-linecap="round" stroke-width="1"></line><line id="\u041B\u0438\u043D\u0438\u044F_125" data-name="\u041B\u0438\u043D\u0438\u044F 125" y2="1.806" transform="translate(5.719 0)" fill="#0C73FE" stroke="#0C73FE" stroke-linecap="round" stroke-width="1"></line><line id="\u041B\u0438\u043D\u0438\u044F_126" data-name="\u041B\u0438\u043D\u0438\u044F 126" x2="3.913" transform="translate(2.258 0)" fill="#0C73FE" stroke="#0C73FE" stroke-linecap="round" stroke-width="1"></line><line id="\u041B\u0438\u043D\u0438\u044F_127" data-name="\u041B\u0438\u043D\u0438\u044F 127" y1="1.204" transform="translate(1.806 9.632)" fill="#0C73FE" stroke="#0C73FE" stroke-linecap="round" stroke-width="1"></line><line id="\u041B\u0438\u043D\u0438\u044F_128" data-name="\u041B\u0438\u043D\u0438\u044F 128" y1="1.204" transform="translate(6.622 9.632)" fill="#0C73FE" stroke="#0C73FE" stroke-linecap="round" stroke-width="1"></line></g></svg>                          </div>
+                        </li>
+                        <li class="ticket-tag-list__item">
+                          <div class="ticket-tag --icon" data-bs-toggle="tooltip" title="Есть ручная кладь">
+                            <svg id="\u0421\u0433\u0440\u0443\u043F\u043F\u0438\u0440\u043E\u0432\u0430\u0442\u044C_1047" data-name="\u0421\u0433\u0440\u0443\u043F\u043F\u0438\u0440\u043E\u0432\u0430\u0442\u044C 1047" width="8.261" height="9.586" viewBox="0 0 8.261 9.586"><path id="\u041A\u043E\u043D\u0442\u0443\u0440_8336" data-name="\u041A\u043E\u043D\u0442\u0443\u0440 8336" d="M1.18,0h5.9a1.192,1.192,0,0,1,1.18,1.2V6.321a1.192,1.192,0,0,1-1.18,1.2H1.18A1.192,1.192,0,0,1,0,6.321V1.2A1.192,1.192,0,0,1,1.18,0Z" transform="translate(0 2.061)" fill="#0C73FE"></path><g id="\u042D\u043B\u043B\u0438\u043F\u0441_106" data-name="\u042D\u043B\u043B\u0438\u043F\u0441 106" transform="translate(1.515)" fill="none" stroke="#0C73FE" stroke-width="1"><ellipse cx="2.588" cy="2.588" rx="2.588" ry="2.588" stroke="none"></ellipse><ellipse cx="2.588" cy="2.588" rx="2.088" ry="2.088" fill="none"></ellipse></g></svg>                            </svg>
+                          </div>
+                        </li>
+                        <li class="ticket-tag-list__item">
+                          <div class="ticket-tag --icon --warning" data-bs-toggle="tooltip" title="Долгая пересадка">
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" data-test-id="icon" class="icon_0ce8f7f icon_b0a8dbc color-red_b0a8dbc" aria-hidden="true"><path clip-rule="evenodd" d="M8 6v3.9h.007L8 9.906l2.667 2.594L8 15.1l.007.007H8V19h8v-3.893h-.007L16 15.1l-2.667-2.6L16 9.906l-.007-.006H16V6H8zm7.013 9.667V18H9v-2.333L12.007 13l3.006 2.667zM15 7H9v1h6V7z"></path>
+                            </svg>
+                          </div>
+                        </li>
+                        <li class="ticket-tag-list__item">
+                          <div class="ticket-tag --icon --warning" data-bs-toggle="tooltip" title="Ночная пересадка">
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" data-test-id="icon" class="icon_0ce8f7f icon_b0a8dbc color-red_b0a8dbc" aria-hidden="true"><path clip-rule="evenodd" d="M18.214 15.014c-.422.091-.86.139-1.31.139-3.364 0-6.09-2.687-6.09-6.002 0-1.099.3-2.13.824-3.016-2.734.591-4.78 2.991-4.78 5.863 0 3.315 2.727 6.002 6.09 6.002 2.248 0 4.211-1.2 5.267-2.986z"></path>
+                            </svg>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="ticket-desktop__subs">
+                    <div class="ticket-subscriptions" data-bs-toggle="tooltip" title="Подписаться на уведомления об изменениях цены этого билета">
+                      <button class="ticket-subscriptions__button">
+                        <span class="ticket-subscriptions__icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 20C14 21.1 13.1 22 12 22C11.4696 22 10.9609 21.7893 10.5858 21.4142C10.2107 21.0391 10 20.5304 10 20H14Z" fill="#A0B0B9"></path><path d="M18.6354 18H5.36367L6.15243 17.1876C6.69598 16.6277 7 15.8781 7 15.0978V10.758C7 7.91096 8.43312 5.77943 10.737 5.21752L11.5 5.03141V4.246V3.545C11.5 3.21426 11.7499 3 12 3C12.2501 3 12.5 3.21426 12.5 3.545V4.245V5.0295L13.2619 5.21625C15.5576 5.77893 17 7.92209 17 10.757V15.0988C17 15.8791 17.304 16.6287 17.8476 17.1886L18.6354 18Z" stroke="#A0B0B9" stroke-width="2"></path>
+                          </svg>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="ticket-desktop__share">
+                    <div class="ticket-sharing-desktop">
+                      <button type="button" class="ticket-sharing-desktop__open-button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" data-test-id="icon" class="icon_0ce8f7f ticket-sharing-desktop__share-icon" aria-hidden="true"><path d="M11.375 1.272L8.277 4.57c-.37.363-.37 1.028 0 1.391.142.152.37.242.597.212.227 0 .455-.09.625-.272L11 4.176v9.886c0 .482.5.938 1 .938s1-.41 1-.938V4.176l1.473 1.754a.886.886 0 001.25.03c.37-.363.37-.998 0-1.391l-3.098-3.297a.854.854 0 00-1.25 0z"></path><path d="M9 8v2H7a1 1 0 00-1 1v8a1 1 0 001 1h10a1 1 0 001-1v-8a1 1 0 00-1-1h-2V9 8h2a3 3 0 013 3v8a3 3 0 01-3 3H7a3 3 0 01-3-3v-8a3 3 0 013-3h2z"></path>
+                        </svg>
+                      </button>
+                      <button type="button" class="ticket-sharing-desktop__close-button">
+                        <span class="ticket-sharing-desktop__close-icon">
+                          <svg width="10" height="10" viewBox="0 0 10 10" fill="#A0B0B9" xmlns="http://www.w3.org/2000/svg"> <path d="M9.66665 1.27325L8.72665 0.333252L4.99998 4.05992L1.27331 0.333252L0.333313 1.27325L4.05998 4.99992L0.333313 8.72659L1.27331 9.66659L4.99998 5.93992L8.72665 9.66659L9.66665 8.72659L5.93998 4.99992L9.66665 1.27325Z"></path></svg>
+                        </span>
+                      </button>
+                      <div class="ticket-sharing-desktop__bar">
+                        <div class="ticket-sharing-desktop__bar-content">
+                          <div class="ticket-sharing-desktop__list">
+                            <div class="ticket-sharing-desktop__list-item" data-test-id="tooltip-wrapper">
+                              <div class="socialButton_e8962cf whatsapp_e8962cf small_e8962cf" data-test-id="social-button">
+                                <button title="Поделиться в Whatsapp" class="button_278c41a inline_278c41a button_e8962cf ticket-sharing-desktop__share-btn" type="button" data-test-id="button">
+                                  <span class="text_278c41a">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" data-test-id="icon" class="icon_0ce8f7f icon_e8962cf" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.913 18.9l-.301-.15-3.01.75.803-2.95-.2-.3C4.451 15 4 13.55 4 12.05 3.95 7.6 7.56 4 11.975 4a7.98 7.98 0 015.668 2.35A8.017 8.017 0 0120 12c0 4.4-3.611 8-8.025 8a7.879 7.879 0 01-4.062-1.1zm7.974-5.05l.552.25c.1.05.15.1.15.1v.35c-.05.25-.1.5-.2.7-.05.1-.15.2-.251.3-.05.05-.1.087-.15.125-.05.037-.1.075-.15.125l-.101.1c-.057.056-.113.08-.178.11-.051.021-.107.046-.173.09-.2.1-.502.2-.753.2h-.501c-.075-.025-.163-.038-.251-.05-.088-.012-.175-.025-.25-.05a8.971 8.971 0 01-3.612-1.9c-.065-.098-.152-.175-.247-.258-.05-.044-.102-.09-.154-.142l-.2-.2a8.33 8.33 0 01-1.857-2.55l-.05-.15c-.15-.35-.25-.75-.25-1.15 0-.55.2-1.1.551-1.55.05-.05.088-.1.126-.15.037-.05.075-.1.125-.15.05-.025.1-.062.15-.1.05-.037.1-.075.151-.1l.05-.05c.05 0 .1-.012.15-.025.05-.012.1-.025.151-.025h.552c.15.05.25.1.35.25.151.3.753 1.65.803 1.9.05.15 0 .35-.1.5a.889.889 0 00-.125.175c-.038.063-.076.125-.126.175-.15.15-.35.4-.35.4-.051.05-.051.15-.051.25.02.038.031.07.041.095a.263.263 0 00.06.105l.05.1c.25.45.601.85.952 1.2.05.05.113.1.176.15.063.05.125.1.176.15.4.4.902.7 1.454.95l.25.1c.05.05.151.1.201.1h.05c.1 0 .201-.05.251-.15.702-.8.753-.85.753-.85.1-.05.2-.1.35-.1.026 0 .05.013.076.025.025.013.05.025.075.025.502.25 1.304.6 1.304.6z"></path>
+                                    </svg>
+                                  </span>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="ticket-sharing-desktop__list-item" data-test-id="tooltip-wrapper">
+                              <div class="socialButton_e8962cf vkontakte_e8962cf small_e8962cf" data-test-id="social-button">
+                                <button title="Поделиться в Вконтакте" class="button_278c41a inline_278c41a button_e8962cf ticket-sharing-desktop__share-btn" type="button" data-test-id="button">
+                                  <span class="text_278c41a">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" data-test-id="icon" class="icon_0ce8f7f icon_e8962cf" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.763 3H9.237C4.194 3 3 4.194 3 9.237v5.526C3 19.806 4.194 21 9.237 21h5.526C19.806 21 21 19.806 21 14.763V9.237C21 4.194 19.793 3 14.763 3zm2.77 12.843h-1.31c-.495 0-.647-.394-1.536-1.296-.775-.75-1.118-.851-1.309-.851-.267 0-.343.076-.343.444v1.182c0 .317-.101.508-.94.508-1.384 0-2.921-.838-4.001-2.4-1.626-2.287-2.07-4.002-2.07-4.358 0-.19.076-.368.444-.368h1.308c.33 0 .458.152.585.508.647 1.867 1.727 3.506 2.172 3.506.165 0 .241-.076.241-.496v-1.93c-.05-.89-.52-.966-.52-1.284 0-.152.126-.304.33-.304h2.058c.279 0 .38.152.38.482v2.604c0 .28.128.382.204.382.165 0 .305-.102.61-.407.94-1.054 1.613-2.68 1.613-2.68.089-.19.241-.369.571-.369h1.309c.394 0 .483.204.394.483-.165.762-1.766 3.023-1.766 3.023-.14.229-.19.33 0 .585.14.19.597.584.902.94.559.635.99 1.168 1.105 1.537.127.368-.063.559-.432.559z"></path>
+                                    </svg>
+                                  </span>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="ticket-sharing-desktop__list-item" data-test-id="tooltip-wrapper">
+                              <div class="socialButton_e8962cf twitter_e8962cf small_e8962cf" data-test-id="social-button">
+                                <button title="Поделиться в Твиттере" class="button_278c41a inline_278c41a button_e8962cf ticket-sharing-desktop__share-btn" type="button" data-test-id="button">
+                                  <span class="text_278c41a">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" data-test-id="icon" class="icon_0ce8f7f icon_e8962cf" aria-hidden="true"><path d="M11.74 8.724l.039.606-.65-.074C8.762 8.97 6.694 8.007 4.938 6.389l-.858-.804-.222.593c-.468 1.323-.169 2.72.807 3.658.52.52.403.594-.494.285-.313-.1-.586-.173-.612-.136-.09.086.221 1.21.468 1.656.339.618 1.028 1.223 1.782 1.582l.638.284-.755.012c-.728 0-.754.012-.676.272.26.803 1.288 1.656 2.432 2.027l.806.26-.702.395a7.673 7.673 0 01-3.486.914C3.481 17.4 3 17.45 3 17.486c0 .124 1.587.816 2.51 1.087 2.77.804 6.06.458 8.532-.914 1.756-.976 3.512-2.916 4.331-4.795.442-1 .884-2.83.884-3.707 0-.569.04-.643.768-1.323.429-.395.832-.828.91-.951.13-.235.117-.235-.546-.025-1.105.37-1.262.321-.715-.235.403-.395.884-1.112.884-1.322 0-.037-.195.025-.416.136-.234.124-.754.309-1.145.42l-.702.21-.637-.408c-.351-.222-.846-.47-1.106-.543-.663-.173-1.678-.149-2.276.05-1.626.555-2.653 1.989-2.536 3.558z"></path>
+                                    </svg>
+                                  </span>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="ticket-sharing-desktop__list-item" data-test-id="tooltip-wrapper">
+                              <div class="socialButton_e8962cf telegram_e8962cf small_e8962cf" data-test-id="social-button">
+                                <button title="Поделиться в Телеграме" class="button_278c41a inline_278c41a button_e8962cf ticket-sharing-desktop__share-btn" type="button" data-test-id="button">
+                                  <span class="text_278c41a">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" data-test-id="icon" class="icon_0ce8f7f icon_e8962cf" aria-hidden="true"><path d="M19 5.496l-2.53 12.92s-.355.897-1.328.467l-3.627-2.816.026.021-2.31 2.133s-.18.139-.378.052l.467-4.031s6.477-5.897 6.742-6.148c.266-.25.177-.304.177-.304.018-.305-.478 0-.478 0L7.18 13.31l-3.574-1.218s-.548-.198-.602-.628c-.054-.43.62-.663.62-.663l14.208-5.646S19 4.636 19 5.496z"></path>
+                                    </svg>
+                                  </span>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="ticket-sharing-desktop__list-item">
+                              <div class="" data-test-id="tooltip-wrapper">
+                                <div class="root_4a9c15c small_4a9c15c" data-test-id="copy-link">
+                                  <button title="Скопировать ссылку" class="button_278c41a inline_278c41a button_4a9c15c copyLink_4a9c15c ticket-sharing-desktop__share-btn" type="button" data-test-id="button">
+                                    <span class="text_278c41a">
+                                      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" data-test-id="icon" class="icon_0ce8f7f icon_4a9c15c" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.508 5.51l-.056-.057c-1.483-1.451-3.835-1.532-5.22-.18L10.02 8.409a3.24 3.24 0 00-.754 1.14c-.17.431-.248.899-.232 1.374.017.475.128.95.328 1.394.2.445.484.851.836 1.195l.056.057c.134.13.247.222.398.335l1.171-1.143a2.384 2.384 0 01-.414-.32l-.058-.055c-.798-.782-.841-2.023-.096-2.768l3.213-3.137c.745-.728 2.014-.684 2.83.099l.057.056c.797.781.841 2.022.096 2.767l-1.456 1.421c.28.636.428 1.313.437 1.99l2.254-2.201a3.21 3.21 0 00.764-1.137c.172-.432.252-.9.236-1.377a3.69 3.69 0 00-.332-1.397 3.892 3.892 0 00-.846-1.193zm-5.156 4.58l-1.172 1.143c.15.095.282.19.415.32l.057.056c.8.781.843 2.021.096 2.768l-3.216 3.136c-.747.728-2.016.684-2.834-.099l-.056-.056c-.8-.78-.843-2.02-.097-2.767l1.458-1.42a5.098 5.098 0 01-.437-1.992l-2.259 2.203c-.329.32-.585.707-.755 1.14-.17.431-.248.898-.231 1.374.016.476.128.95.328 1.394.2.445.485.85.837 1.195l.056.056c1.485 1.45 3.84 1.533 5.226.181l3.217-3.136c.329-.32.586-.708.756-1.14.17-.431.248-.899.232-1.375a3.716 3.716 0 00-.329-1.394c-.2-.445-.485-.85-.837-1.195l-.056-.056a3.678 3.678 0 00-.398-.337z"></path>
+                                      </svg>
+                                    </span>
+                                  </button>
+                                  <div class="wrapper_8d9dab7 isHidden_4a9c15c" data-test-id="input">
+                                    <input type="url" readonly="" placeholder="" class="input_8d9dab7 custom_8d9dab7 inputInner_4a9c15c small_4a9c15c" value="https://www.aviasales.ru/search/MOW2801DXB31011?expected_price=31867&amp;expected_price_currency=rub&amp;expected_price_source=share&amp;expected_price_uuid=f7185eea-8575-4581-93f5-db247f73cfbc&amp;marker=yandex&amp;search_date=22012023&amp;search_label=&amp;t=FZ16748901001674913200000325VKODXB16751286001675145700000345DXBVKO_31280b61cf4583b0355a9f198c4cc9f2_31867&amp;utm_source=ticket_sharing">
+                                    <span class="leftElement_8d9dab7 hidden_8d9dab7"></span>
+                                    <span class="rightElement_8d9dab7 hidden_8d9dab7"></span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div
+                ><div class="ticket-desktop__body">
+                  <div class="ticket-desktop__segments-wrap">
+                    <div class="ticket-desktop__segment"><div class="ticket-segment"><div class="ticket-segment__route"><div class="segment-route" data-test-id="ticket-segment-route"><div class="segment-route__body"><div class="segment-route__endpoint origin" data-test-id="origin-endpoint"><div class="title-2-regular_03dd9f9 mobile-title-2-regular_03dd9f9 segment-route__time" data-test-id="time">03:20</div><div class="segment-route__city" data-test-id="city">Худжанд</div><div class="segment-route__date" data-test-id="date">29 янв, вс</div></div><div class="segment-route__route_wrap"><div class="segment-route__duration">В пути:  10ч 25м</div><div class="segment-route__path"><div class="segment-route__path-endpoint --departure --plane" data-bs-toggle="tooltip" title='Вылет из аэропорта "Аэропорт" (Худжанд) в 03:20 местному времени'><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" data-test-id="icon" class="icon_0ce8f7f segment-route__path-endpoint-icon" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.954 9.793l-2.719 1.268c-2-.64-4.862-1.236-7.398-2.056l-1.201.55c1.32 1.029 3.135 2.33 4.52 3.408L7.439 14.23c-1.173-.248-2.418-.338-3.349-.532-.506-.106-.816.339-.338.71 2.256 1.759 3.159 2.469 3.159 2.469.392.305.875.497 1.343.283l12.445-5.803c.906-.46.871-1.106.64-1.629-.547-1.173-2.049-1.003-4.384.064z"></path></svg><span class="segment-route__path-endpoint-iata">LBD</span></div><div class="segment-route__connector --pinable" data-bs-toggle="tooltip" title='В пути: 10ч:25м' style="flex-grow: 205;"></div><div data-iatas="KUF" class="segment-route__stop" data-bs-toggle="tooltip" title="Пересадка 0ч:0м в аэропорту Самары" style="flex-grow: 305;"></div><div class="segment-route__connector --pinable" data-bs-toggle="tooltip" title='В пути: 10ч:25м' style="flex-grow: 115;"></div><div class="segment-route__path-endpoint --arrival --plane" data-bs-toggle="tooltip" title='Прилёт в аэропорт "Москва" в 11:45 местному времени'><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" data-test-id="icon" class="icon_0ce8f7f segment-route__path-endpoint-icon" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.109 14.02l-2.719-1.268c-.795-1.945-2.178-4.52-3.18-6.99l-1.193-.567c.06 1.674.23 3.9.295 5.655l-2.72-1.268c-.564-1.058-1.295-2.069-1.744-2.907-.245-.456-.785-.408-.762.198.103 2.858.14 4.006.14 4.006.018.497.182.99.646 1.21l12.445 5.804c.935.398 1.407-.043 1.659-.557.547-1.173-.549-2.214-2.867-3.317z"></path></svg><span class="segment-route__path-endpoint-iata">SVO</span></div></div></div><div class="segment-route__endpoint destination" data-test-id="destination-endpoint"><div class="title-2-regular_03dd9f9 mobile-title-2-regular_03dd9f9 segment-route__time" data-test-id="time">11:45</div><div class="segment-route__city" data-test-id="city">Москва</div><div class="segment-route__date" data-test-id="date">29 янв, вс</div></div></div></div></div></div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
 
             <!-- Sales Card -->
                 <!--
@@ -723,7 +1103,7 @@
             <!-- End Revenue Card -->
 
             <!-- Customers Card -->
-            <div class="col-xxl-4 col-xl-12">
+            <!--<div class="col-xxl-4 col-xl-12">-->
 
               <!--<div class="card info-card customers-card">
 
@@ -1270,6 +1650,14 @@
 
             </div>
           </div>-->
+          <!-- HTML для записи -->
+
+<div class="tooltip bs-tooltip-top" role="tooltip">
+  <div class="tooltip-arrow"></div>
+  <div class="tooltip-inner">
+    Текст всплывающей подсказки!
+  </div>
+</div>
         </div>
         </div><!-- End center side columns -->
 

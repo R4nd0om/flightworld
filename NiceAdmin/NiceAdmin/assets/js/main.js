@@ -168,6 +168,17 @@ $(document).ready(function() {
     $('.app__sidebar').removeClass('show')
   }
 
+  var tooltipTriggerList = Array.prototype.slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+
+  $('.caret').click(function() {
+    $('.caret').toggleClass('openCard')
+    $('.perelet').toggleClass('openCard')
+    $('.moreCard').toggleClass('hidden')
+  })
+
   /**
    * Initiate tooltips
    */

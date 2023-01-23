@@ -12,8 +12,13 @@
 
 body {
   font-family: 'Sofia Sans', sans-serif;
-  background: #f6f9ff;
+  background: #EFF1F4;
   color: #444444;
+  font-weight: normal;
+}
+
+.body-3-semi_03dd9f9, .caption-semi_03dd9f9 {
+  font-weight: normal;
 }
 
 a {
@@ -42,7 +47,7 @@ h6 {
   padding-top: 20px;
   justify-content: center;
   display: flex;
-  gap: 20px;
+  gap: 30px;
   flex-direction: row;
 }
 
@@ -1382,11 +1387,13 @@ h6 {
 }
 
 .LC {
-  margin-top: 15px;
+  margin-bottom: 7.5px;
+  margin-top: 7.5px;
 }
 
 .perelet {
-  height: 200px;
+  border-radius: 20px;
+  height: 290px;
   display: flex;
   flex-direction: row;
 }
@@ -1394,27 +1401,41 @@ h6 {
 .select-fly {
   background-color: #FF6F32;
   color: white;
-  width: 80%;
+  width: 90%;
+  height: 17%;
+  border-radius: 10px;
   font-size: 17px;
 }
 
+.select-fly:hover {
+  background-color: #ff7940;
+  color: #fff;
+}
+
 .cours {
-  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 0;
   font-weight: 700;
-  font-size: 12px;
-  color: #FF0000;
+  font-size: 13px;
+  color: #FF6F32;
 }
 
 .count {
-  font-size: 14px;
+  line-height: 1.5;
+  word-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
   text-align: center;
   width: 80%;
-  color: #FF7777;
+  color: #FF6F32;
+  font-weight: 600;
 }
 
 .leftCard {
+  width: 30%;
+  padding-top: 15px;
+  padding-right: 10px;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
   display: flex;
   border-right: #EEE 1px solid;
@@ -1423,6 +1444,83 @@ h6 {
 .pricer {
   font-size: 20px;
   font-weight: 700;
+}
+
+.ticket-subscriptions:hover {
+  stroke: #0C73FE;
+}
+
+.ticket-sharing-desktop__open-button:hover {
+  color: #0C73FE;
+}
+
+.ticket-desktop__body {
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.ticket-desktop__body .ticket-desktop__segment:not(:first-child) {
+    margin-top: 20px;
+    border-top: #cdd4de 1px solid;
+    padding-top: 20px;
+}
+
+.segment-route__path-endpoint-iata {
+  color: #0C73FE;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.segment-route__stop {
+  color: #0C73FE;
+}
+
+.caret {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px 0 0 20px;
+  margin-left: -12px;
+  width: 25px;
+  height: 100%;
+  background-color: #0C73FE;
+}
+
+.caret:hover {
+  background-color: #0765e0;
+}
+
+.openCard {
+  height: 500px;
+}
+
+.plane {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 30px;
+}
+
+.moreCard {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.planeIcon {
+  margin-top: -7px;
+  gap: 5px;
+}
+
+.planeDuration {
+  margin-top: 10px;
+  background-color: #0765e0;
 }
 
 /*--------------------------------------------------------------
