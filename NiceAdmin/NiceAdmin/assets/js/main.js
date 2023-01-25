@@ -176,7 +176,8 @@ $(document).ready(function() {
   $('.caret').click(function() {
     $(this).toggleClass('openCard')
     $(this).parent().toggleClass('openCard')
-    $(this).$('.detailCard').toggleClass('hidden')
+    $(this).parent().find('.detailCard').toggleClass('hidden')
+    $(this).find('.bi-arrow-down-short').toggleClass('rotate')
   })
 
   /**
