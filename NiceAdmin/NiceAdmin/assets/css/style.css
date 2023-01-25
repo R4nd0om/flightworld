@@ -1398,6 +1398,10 @@ h6 {
   flex-direction: row;
 }
 
+.short {
+  height: 200px;
+}
+
 .select-fly {
   background-color: #FF6F32;
   color: white;
@@ -1489,27 +1493,29 @@ h6 {
   background-color: #0C73FE;
 }
 
+
 .caret:hover {
   background-color: #0765e0;
 }
 
 .openCard {
-  height: 500px;
+  height: 680px;
 }
 
 .plane {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-right: 30px;
 }
 
 .moreCard {
   display: flex;
   flex-direction: row;
-  margin-top: 30px;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
-  width: 100px;
+  text-align: center;
+  width: 100%;
   height: 100px;
 }
 
@@ -1518,16 +1524,41 @@ h6 {
   gap: 5px;
 }
 
-.planeDuration {
-  margin-top: 10px;
-}
-
 .planeCompany {
   flex-direction: row;
   margin-top: 10px;
 }
 
+.planeIc {
+  margin-top: -10px;
+  width: 40px;
+  height: 40px;
+}
 
+.moreInfo {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100px;
+  margin-top: 0;
+  justify-content: space-between;
+}
+
+.leftInfo {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.rightInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: flex-end;
+}
 
 /*--------------------------------------------------------------
 # Footer

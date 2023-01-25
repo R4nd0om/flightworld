@@ -174,9 +174,9 @@ $(document).ready(function() {
   })
 
   $('.caret').click(function() {
-    $('.caret').toggleClass('openCard')
-    $('.perelet').toggleClass('openCard')
-    $('.moreCard').toggleClass('hidden')
+    $(this).toggleClass('openCard')
+    $(this).parent().toggleClass('openCard')
+    $(this).$('.detailCard').toggleClass('hidden')
   })
 
   /**
