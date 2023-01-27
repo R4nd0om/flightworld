@@ -1499,7 +1499,7 @@ h6 {
 }
 
 .openCard {
-  height: 680px;
+  min-height: 670px;
 }
 
 .plane {
@@ -1539,6 +1539,8 @@ h6 {
 }
 
 .planeCompany {
+  display: flex;
+  justify-content: center;
   flex-direction: row;
   margin-top: 10px;
   color: #000;
@@ -1591,6 +1593,65 @@ h6 {
   gap: 10px;
   justify-content: center;
   align-items: center;
+}
+
+.mobile_perelet {
+  display: none;
+}
+
+@media(max-width: 550px) {
+  .ticket-desktop__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .planeDuration {
+    display: none;
+  }
+
+  .planePeresadka {
+    margin-bottom: 20px;
+  }
+
+  .ticket-desktop__body {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .ticket-desktop__header {
+    padding: 20px 0 10px;
+  }
+
+  .perelet {
+    height: fit-content;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dekstop_perelet {
+    display: none;
+  }
+
+  .segment-route__body {
+    justify-content: space-between;
+  }
+
+  .select-fly {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .caret {
+    width: 100vw;
+    min-height: 30px;
+    border-radius: 0 0 10px 10px;
+  }
+
 }
 
 /*--------------------------------------------------------------
