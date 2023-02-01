@@ -1237,6 +1237,283 @@ h6 {
   }
 }
 
+<<<<<<< HEAD
+=======
+.LC {
+  margin-bottom: 7.5px;
+  margin-top: 7.5px;
+}
+
+.perelet {
+  border-radius: 20px;
+  height: 290px;
+  display: flex;
+  flex-direction: row;
+}
+
+.short {
+  height: 200px;
+}
+
+.select-fly {
+  background-color: #FF6F32;
+  color: white;
+  width: 90%;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 17px;
+}
+
+.select-fly:hover {
+  background-color: #ff7940;
+  color: #fff;
+}
+
+.cours {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 11px;
+  color: #FF6F32;
+}
+
+.count {
+  line-height: 1.5;
+  word-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  text-align: center;
+  width: 80%;
+  color: #FF6F32;
+  font-weight: 600;
+}
+
+.leftCard {
+  width: 30%;
+  padding-top: 15px;
+  padding-right: 10px;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  border-right: #EEE 1px solid;
+}
+
+.pricer {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.ticket-subscriptions:hover {
+  stroke: #0C73FE;
+}
+
+.ticket-sharing-desktop__open-button:hover {
+  color: #0C73FE;
+}
+
+.ticket-desktop__body {
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.ticket-desktop__body .ticket-desktop__segment:not(:first-child) {
+    margin-top: 20px;
+    border-top: #cdd4de 1px solid;
+    padding-top: 20px;
+}
+
+.segment-route__path-endpoint-iata {
+  color: #0C73FE;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.segment-route__stop {
+  color: #0C73FE;
+}
+
+.caret {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px 0 0 20px;
+  margin-left: -12px;
+  width: 25px;
+  height: 100%;
+  background-color: #0C73FE;
+}
+
+
+.caret:hover {
+  background-color: #0765e0;
+}
+
+.openCard {
+  min-height: 670px;
+}
+
+.plane {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.planeDuration {
+  color: #000;
+}
+
+.planeTime {
+  color: #000;
+}
+
+.rotate {
+  rotate: 180deg;
+}
+
+.moreCard {
+  color: #aaaaaa;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+}
+
+.planeIcon {
+  margin-top: -7px;
+  gap: 5px;
+}
+
+.planeCompany {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 10px;
+  color: #000;
+}
+
+.planeIc {
+  margin-top: -10px;
+  width: 40px;
+  height: 40px;
+}
+
+.moreInfo {
+  color: #aaaaaa;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100px;
+  margin-top: 0;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.infoDetail {
+  color: #000;
+}
+
+.leftInfo {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.rightInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.planePeresadka {
+  border: #0C73FE 1px solid;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  border-radius: 10px;
+  margin-top: 20px;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile_perelet {
+  display: none;
+}
+
+@media(max-width: 550px) {
+  .ticket-desktop__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .planeDuration {
+    display: none;
+  }
+
+  .planePeresadka {
+    margin-bottom: 20px;
+  }
+
+  .ticket-desktop__body {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .ticket-desktop__header {
+    padding: 20px 0 10px;
+  }
+
+  .perelet {
+    box-shadow: 0px 0px 20px 2px rgb(145, 145, 145);
+    height: fit-content;
+    width: 90%;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dekstop_perelet {
+    display: none;
+  }
+
+  .row {
+    justify-content: center;
+  }
+
+  .segment-route__body {
+    justify-content: space-between;
+  }
+
+  .select-fly {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .caret {
+    width: 90vw;
+    min-height: 30px;
+    border-radius: 0 0 10px 10px;
+  }
+
+}
+
+>>>>>>> 259abd513fa1a2595ae5328c3ef10074ed90c277
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
