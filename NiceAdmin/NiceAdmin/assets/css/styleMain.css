@@ -402,13 +402,31 @@ h6 {
 
 /* Card */
 .card {
+  font-size: 16px;
+  font-weight: 700;
   margin-bottom: 30px;
+  padding: 0;
   border: none;
   border-radius: 5px;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
 }
 
+.card-body {
+  padding: 20px;
+}
+
+.inCard {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .card-header {
+  align-self: flex-start;
+  justify-self: flex-start;
+  width: 100%;
+  margin: 0;
   background-color: #0C73FE;
   color: #fff;
 }
@@ -1377,6 +1395,18 @@ h6 {
   flex-direction: row;
 }
 
+input {
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 40px!important;
+  max-height: 40px;
+  padding: 0 15px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #4a4a4a;
+  border-color: rgb(202, 202, 202);
+}
+
 .short {
   height: 200px;
 }
@@ -1634,6 +1664,7 @@ h6 {
 }
 
 .stages {
+  font-weight: normal;
   display: flex;
   flex-direction: row;
   justify-content:space-between;
@@ -1650,6 +1681,19 @@ h6 {
   color: #0C73FE;
   background-color: #0C73FE;
   width: 1px;
+}
+
+.sum {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.payment {
+  padding: 15px;
+  border-radius: 10px;
 }
 
 /*--------------------------------------------------------------
