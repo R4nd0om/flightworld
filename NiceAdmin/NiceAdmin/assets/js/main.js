@@ -180,6 +180,8 @@ $(document).ready(function() {
     $(this).find('.bi-arrow-down-short').toggleClass('rotate')
   })
 
+  
+
   /**
    * Initiate tooltips
    */
@@ -250,6 +252,8 @@ $(document).ready(function() {
       theme: "snow"
     });
   }
+
+
 
   /**
    * Initiate TinyMCE Editor
