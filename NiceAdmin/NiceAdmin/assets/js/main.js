@@ -180,7 +180,11 @@ $(document).ready(function() {
     $(this).find('.bi-arrow-down-short').toggleClass('rotate')
   })
 
-  
+
+  let input = document.querySelector('input')
+  if (input.value == '') {
+    $(this).css('border-color:#f00')
+  }
 
   /**
    * Initiate tooltips
