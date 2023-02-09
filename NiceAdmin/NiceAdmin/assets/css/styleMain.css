@@ -409,7 +409,8 @@ h6 {
   padding: 0;
   border: none;
   border-radius: 5px;
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+  box-shadow: 0px 5px 10px rgb(132, 132, 132);
+  
 }
 
 .card-body {
@@ -426,6 +427,12 @@ h6 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
+}
+
+@media (max-width: 550px) {
+  .passanger {
+    grid-template-columns: repeat(2, 40%);
+  }
 }
 
 .card-header {
@@ -1404,8 +1411,6 @@ h6 {
 input {
   box-sizing: border-box;
   border-radius: 4px;
-  height: 40px!important;
-  max-height: 40px;
   padding: 0 15px;
   font-size: 14px;
   line-height: 16px;
@@ -1573,7 +1578,19 @@ input[type="radio"] {
   font-weight: 300;
   transition: 0.5s;  
   pointer-events: none;
-}    
+}   
+
+.required {
+  position: relative;
+  margin-top: 50px;
+  left: 0px;
+  display: inline-block;
+  font-size: 12px;
+  color: #ff0000;
+  font-weight: 300;
+  transition: 0.5s;  
+  pointer-events: none;
+}
 
 .inputBoxLabel span{
   position: absolute;
@@ -1592,6 +1609,14 @@ input[type="radio"] {
     color: #9e9e9e;
     transform: translateX(-10px) translateY(-27px);
 }    
+
+.inputBox input:valid ~ .required {
+  display: none;
+}
+
+.inputBox input:invalid ~ .required {
+  display: block;
+}
 
 .short {
   height: 200px;
@@ -1655,7 +1680,7 @@ input[type="radio"] {
 
 .ticket-desktop__body {
   padding-left: 20px;
-  padding-right: 10px;
+  padding-right: 20px;
 }
 
 .ticket-desktop__body .ticket-desktop__segment:not(:first-child) {
@@ -1685,12 +1710,12 @@ input[type="radio"] {
   margin-left: 0px;
   width: 25px;
   height: 100%;
-  background-color: #0C73FE;
+  background-color: #ffffff;
 }
 
 
 .caret:hover {
-  background-color: #0765e0;
+  background-color: #f2f2f2;
 }
 
 .openCard {
@@ -1853,10 +1878,14 @@ input[type="radio"] {
   font-weight: normal;
   display: flex;
   flex-direction: row;
-  justify-content:space-between;
   align-items: center;
   text-align: center;
-  height: 70px;
+  height: 80px;
+}
+
+.stage {
+  display: flex;
+  justify-content: center;
 }
 
 .imgStage {
@@ -1864,10 +1893,16 @@ input[type="radio"] {
   padding-bottom: 10px;
 }
 
+.stage p {
+  position: absolute;
+  margin-top: 35px;
+}
+
 .betweenStage {
   color: #0C73FE;
   background-color: #0C73FE;
-  width: 1px;
+  width: 100%;
+  margin-top: 5px;
 }
 
 .sum {

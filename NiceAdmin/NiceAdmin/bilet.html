@@ -523,7 +523,7 @@
 
             <div class="card">
               <div class="card-body stages">
-                <div class="stage">
+                <div class="stage" style="margin-left: 16px;">
                   <img class="imgStage" src="av\images\checkWithBackground.svg">
                   <p>Поиск</p>
                 </div>
@@ -538,9 +538,9 @@
                   <p>Бронирование</p>
                 </div>
                 <hr class="betweenStage">
-                <div class="stage">
+                <div class="stage" style="margin-right: 10px;">
                   <img class="imgStage" src="av\images\dotWithoutBackground.svg">
-                  <p>Оплата</p>
+                  <p style="margin-right: 16px;">Оплата</p>
                 </div>
               </div>
             </div>
@@ -737,12 +737,12 @@
 
             <div class="card dekstop_perelet perelet">
               <div class="caret --is-clickable" tabindex="1">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#fff" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#0C73FE" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
                 </svg>
               </div>
               <div class="ticket-desktop__content">
-                <div class="card-header" style="border-radius: 0 5px 0px 0">Данные покупателя</div>
+                <div class="card-header" style="width: 103.4%; margin-left: -25px;">Данные бронирования</div>
                 <div class="ticket-desktop__header">
                   <div class="ticket-desktop__carriers">
                     <ul class="ticket-carrier-list">
@@ -1043,12 +1043,14 @@
                 <p class="txtCard">Введите действующий адрес электронной почты для отправки билета, а также номер мобильного телефона для связи в случае изменений.</p>
                 <div class="inCard">
                   <div class="inputBox">
-                    <input type="text" name="" required>
+                    <input type="text" name="" required placeholder=" ">
                      <span>Полное имя</span>
+                     <div class="required">Это поле обязательное к заполнению</div>
                   </div>
                   <div class="inputBox">
                     <input type="text" name="" required="required">
                      <span>E-mail</span>
+                     <div class="required">Это поле обязательное к заполнению</div>
                   </div>
                   <div class="inputBox">
                     <input type="text" name="" required="required">
