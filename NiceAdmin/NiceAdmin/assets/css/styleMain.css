@@ -415,6 +415,7 @@ h6 {
 
 .card-body {
   padding: 20px;
+  padding-bottom: 30px;
 }
 
 .inCard {
@@ -427,11 +428,24 @@ h6 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
+  gap: 20px;
 }
 
 @media (max-width: 550px) {
   .passanger {
-    grid-template-columns: repeat(2, 40%);
+    justify-items: center;
+    grid-template-columns: 2fr;
+    gap: 20px;
+  }
+  .card {
+    width: 90%;
+  }
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+  .sum {
+    gap: 10px;
   }
 }
 
@@ -1846,6 +1860,7 @@ input[type="radio"] {
   }
 
   .perelet {
+    padding: 0 10px;
     height: fit-content;
     gap: 10px;
     display: flex;
@@ -1867,11 +1882,20 @@ input[type="radio"] {
   }
 
   .caret {
-    width: 100vw;
+    width: 100%;
     min-height: 30px;
     border-radius: 0 0 10px 10px;
   }
 
+  .stage {
+    font-size: 12px;
+  }
+
+  .inCard {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 }
 
 .stages {
@@ -1916,6 +1940,7 @@ input[type="radio"] {
 .payment {
   padding: 15px;
   border-radius: 10px;
+  text-align: center;
 }
 
 .txtCard {

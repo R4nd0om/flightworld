@@ -180,6 +180,21 @@ $(document).ready(function() {
     $(this).find('.bi-arrow-down-short').toggleClass('rotate')
   })
 
+  $('.dsd').onblur = function() {
+    if (this.value.includes('@')) { // не email
+      $('.inputBox').children('div').classList.add('required');
+      $(".inputBox").innerHTML = 'Пожалуйста, введите правильный email.'
+    }
+  };
+  
+  $('.dsd').onfocus = function() {
+    if ($('.inputBox').children('div').classList.contains('required')) {
+      // удаляем индикатор ошибки, т.к. пользователь хочет ввести данные заново
+      $('.inputBox').children('div').classList.remove('required');
+      $(".inputBox").innerHTML = "";
+    }
+  };
+
   /**
    * Initiate tooltips
    */
