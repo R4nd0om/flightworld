@@ -1,8 +1,5 @@
 /**
-* Template Name: NiceAdmin - v2.4.1
-* Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
+* Author: R4ndom
 */
 (function() {
   "use strict";
